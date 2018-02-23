@@ -1,17 +1,70 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <title>My Website</title>    
+       <title>My Website</title>  
+       <style>
+           .heading{
+               padding:20px;
+               text-align:right;
+           }
+       </style>  
     </head>
     <body>
-        <h1>Heading One</h1>
-        <h2>Heading Two</h2>
-        <h3>Heading Three</h3>
-        <h4>Heading Four</h4>
-        <h5>Heading Five</h5>
-        <h6>Heading Six</h6>
+        <h1 class="heading" style="width:70%;background-color:pink;">Heading One</h1>
+        <h2 class="heading" style="width:65%;background-color:maroon;">Heading Two</h2>
+        <h3 class="heading" style="width:60%;background-color:blue;">Heading Three</h3>
+        <h4 class="heading" style="width:55%;background-color:green;">Heading Four</h4>
+        <h5 class="heading" style="width:50%; background-color:red;">Heading Five</h5>
+        <h6 class="heading" style="width:45%;background-color:yellow;">Heading Six</h6>
         <p>Hello My name is Kaleb</p>
-        <a href="https://google.com" target="_blank">Click Me!</a>
+        <a href="https://google.com" target="_blank" style="font-size:2em; background-color:red; color:black; height:100px; display:block;">Click Me!</a>
 
+        <ul>
+            <li>Bread</li>
+            <li>Milk</li>
+            <li>Eggs</li>
+        </ul>
+
+        <img src="https://i.ytimg.com/vi/vzLeq2pRgIY/maxresdefault.jpg" alt="Space Ship" 
+        style="max-height:400px; max-width:600px;">
+
+          <!--separates content with a line -->
+          <hr>
+
+        <!--creates a border around a group of related objects -->
+        <form>
+            <fieldset>
+              <legend>Member:</legend>
+              Name:<input type="text"><br>
+              Email:<input type="text"><br>
+              Date of birth: <input type="text">
+            </fieldset>
+          </form>
+
+           <!-- <br> Creates a line break -->
+           <br>
+
+           <!--<optgroup> groups related list items together -->
+           <select>
+            <optgroup label="Swedish Cars">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+            </optgroup>
+            <optgroup label="German Cars">
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </optgroup>
+          </select>
+
+          <!-- <pre> tag is like the <p> tab for text, but maintains space formatting -->
+            <pre>
+                Text in a pre element
+                is displayed in a fixed-width
+                font, and it preserves
+                both      spaces and
+                line breaks
+            </pre>
+          
+          <br>
     </body>
 </html>
