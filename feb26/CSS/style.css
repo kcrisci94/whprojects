@@ -1,0 +1,40 @@
+body {
+  background-color: red;
+  color: white;
+  font-family: cursive;
+}
+
+header {
+  width: 50%;
+  display: flex;
+}
+
+ul {
+  background-color: yellow;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article {
+  width: 75%;
+  background-color: lightgray;
+}
+
+aside {
+  width: 25%;
+  background-color: lightgreen;
+}
+
+section {
+  width: 100%;
+  background-color: magenta;
+}
+
+nav {
+  margin-left: 20px;
+  border: 10px dashed green;
+}
+/*# sourceMappingURL=style.css.map */
