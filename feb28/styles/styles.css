@@ -1,0 +1,30 @@
+body {
+  background-color: #607a2e;
+}
+
+h1 {
+  color: #16169b;
+  text-align: center;
+  font-size: 5em;
+}
+
+section {
+  background-color: purple;
+  padding: 10px;
+  margin: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 600px;
+  align-items: stretch;
+}
+
+div {
+  flex: 1;
+  font-size: 20px;
+  color: white;
+  background-color: yellowgreen;
+  margin: 5px;
+  text-align: center;
+  font-size: 3em;
+}
+/*# sourceMappingURL=styles.css.map */

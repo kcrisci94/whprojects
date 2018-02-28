@@ -1,0 +1,29 @@
+$white: hsl(0, 0%, 96%);
+
+
+html {
+    background-image: url('../pictures/overlay.png'), url('../pictures/bg.jpg');
+    background-size: 25%, cover;
+    padding: 75px 25% 25px 25%;
+    background-repeat: repeat;
+}
+body {
+    background-color: $white;
+    border-radius: 10px 10px 0px 0px;
+}
+ul {
+    margin: 0;
+    padding: 25px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+header {
+    height: 300px;
+    background-image: url('../pictures/pic01.jpg');
+    background-position: center 68px;
+    background-repeat: no-repeat;
+}
+
+
+
