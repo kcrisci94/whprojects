@@ -1,0 +1,50 @@
+main {
+    background-color: red;
+    height: 50vh;
+    // set relative position to parent element
+    position: relative;
+}
+ 
+.img1 {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.img2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+.img3 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: .6;
+}
+
+.img4 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    opacity: .6;
+}
+
+.img5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* center item only works with set top, & bottom */
+    transform: translate3d(-50%, -50%, 0);
+
+}
+div{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: transparentize(lightseagreen, .5);
+}

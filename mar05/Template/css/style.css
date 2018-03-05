@@ -1,0 +1,96 @@
+header {
+  display: flex;
+  overflow: hidden;
+  background-color: #292c2e;
+  position: relative;
+  height: 200px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Muli', sans-serif;
+}
+
+h1 {
+  margin: 0;
+}
+
+.skew {
+  transform: skew(-45deg);
+  transform-origin: left bottom;
+  width: 50vw;
+}
+
+.ignite {
+  background-color: #2d92a9;
+}
+
+.classic {
+  background-color: #a9442d;
+  background-image: url("../images/classic-ribbon.svg");
+  background-size: 100px;
+  background-repeat: repeat-y;
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  color: white;
+}
+
+.logo {
+  flex: none;
+  width: 200px;
+  height: 100%;
+}
+
+.logo img {
+  width: 50%;
+}
+
+.marquee {
+  display: flex;
+  margin-left: -75px;
+  align-items: center;
+}
+
+.marquee h1 {
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+@media print {
+  header {
+    font-size: 20px;
+    height: 500px;
+    background-color: black;
+  }
+  .skew {
+    display: none;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .ignite {
+    background-color: red;
+  }
+  .classic {
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: 472px) {
+  h1 {
+    font-size: 75%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  h1 {
+    font-size: 150%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
