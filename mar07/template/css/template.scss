@@ -1,0 +1,74 @@
+//another way to add font awesome instead of link tag
+
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-image: url('http://unsplash.it/1000/500?image=700');
+    padding-bottom: 100px;
+    text-align: center;
+    color: white;
+
+
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+button {
+    text-transform: uppercase;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 4px;
+}
+.signUp {
+    background-color: hsl(208, 55%, 60%);
+    border-radius: 4px;
+}
+nav {
+    background-color: white;
+    color: black; 
+    margin-bottom: 100px;
+    padding: 10px;
+    ul {
+        display: flex;
+        justify-content: flex-end;
+       
+    }
+    li:first-child {
+        margin-right: auto;
+        text-transform: uppercase;
+    }
+    li:last-child {
+        text-transform: uppercase;
+        color: white;
+    }
+    a {
+        padding: 5px 15px;
+    }
+}
+h1 {
+    text-transform: uppercase;
+}
+div {
+    height: 30vh;
+    width: 30vw;
+}
+span {
+    background-color: blue;
+    border-radius: 100%;
+    font-size: 50px;
+}
+section {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
