@@ -1,0 +1,43 @@
+h1 {
+    text-align: center;
+}
+
+main.background {
+    width: 60vw;
+    font-size: 120%;
+    margin: 20px auto;
+    background-color: rgba(247, 124, 75, 0.6);
+    border: 15px solid rgba(8, 110, 25, 0.308);
+    border-radius: 5px;
+    margin-bottom: 0;
+
+    
+    h3 {
+        padding-top: 20px;
+        margin:0;
+        text-align: center;
+    }
+    p {
+        color: rgb(58, 36, 33);
+        text-shadow: 1px 2px 8px;
+        padding: 10px;
+    }
+}
+ul {
+    color: rgb(58, 36, 33);
+    margin: 0;
+    text-shadow: 1px 2px 8px;
+    li {
+        font-size: 90%;
+        padding: 10px;
+        text-transform: none;
+    }
+}
+ol {
+    li {
+        font-size: 110%;
+    }
+}
+h3{
+    color: rgba(247, 227, 216, 0.734)
+}

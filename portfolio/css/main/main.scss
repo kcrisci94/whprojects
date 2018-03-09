@@ -1,0 +1,48 @@
+$white: rgba(255, 255, 255, 0.534);
+
+body {
+    color: rgba(247, 239, 204, 0.945);
+    background-image: linear-gradient(232deg,rgba(247, 124, 75, 0.87),rgba(0, 0, 0, 0)), url('../../pictures/backgroundImage.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+} 
+
+span {
+    border: 2px solid $white;
+    padding: 5px;
+}
+span:hover {
+    border-color: rgba(247, 239, 204, 0.945);
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;  
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        z-index: 1000;
+        li {
+        padding: 20px;
+        }
+    } 
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+    font-size: 120%;
+}
+a:hover{
+   font-weight: bold;
+   color: rgba(247, 239, 204, 0.945);
+   background-color: rgba(247, 124, 75, 0.199);
+}
+
+
+
