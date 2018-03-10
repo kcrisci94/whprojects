@@ -6,10 +6,11 @@ main.background {
     width: 60vw;
     font-size: 120%;
     margin: 20px auto;
-    background-color: rgba(247, 124, 75, 0.6);
-    border: 15px solid rgba(8, 110, 25, 0.308);
+    background: linear-gradient(90deg, rgba(78, 122, 64, .7), rgba(236, 126, 62, 0.6));
+    // border: 15px solid rgba(170, 122, 160, 0.164);
     border-radius: 5px;
     margin-bottom: 0;
+    padding: 20px;
 
     
     h3 {
@@ -18,15 +19,16 @@ main.background {
         text-align: center;
     }
     p {
-        color: rgb(58, 36, 33);
-        text-shadow: 1px 2px 8px;
+        color: rgb(10, 10, 10);
+        text-shadow: 1px 2px 8px rgb(104, 73, 73);
+        
         padding: 10px;
     }
 }
-ul {
-    color: rgb(58, 36, 33);
+ul.page {
+    color: rgb(10, 10, 10);
     margin: 0;
-    text-shadow: 1px 2px 8px;
+    text-shadow: 1px 2px 8px  rgb(104, 73, 73);
     li {
         font-size: 90%;
         padding: 10px;

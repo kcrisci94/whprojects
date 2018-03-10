@@ -1,38 +1,15 @@
+//Global Style Page
+
 $white: rgba(255, 255, 255, 0.534);
 
 body {
     color: rgba(247, 239, 204, 0.945);
-    background-image: linear-gradient(232deg,rgba(247, 124, 75, 0.87),rgba(0, 0, 0, 0)), url('../../pictures/backgroundImage.jpg');
+    background-image: linear-gradient(232deg,rgba(247, 124, 75, 0.87),rgba(14, 13, 13, 0.493)), url('../../pictures/backgroundImage4.png');
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
-} 
-
-span {
-    border: 2px solid $white;
-    padding: 5px;
 }
-span:hover {
-    border-color: rgba(247, 239, 204, 0.945);
-}
-
-nav {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0;  
-    ul {
-        list-style: none;
-        display: flex;
-        justify-content: flex-end;
-        margin: 0;
-        z-index: 1000;
-        li {
-        padding: 20px;
-        }
-    } 
-}
-
 a {
     color: $white;
     text-decoration: none;
@@ -42,7 +19,65 @@ a:hover{
    font-weight: bold;
    color: rgba(247, 239, 204, 0.945);
    background-color: rgba(247, 124, 75, 0.199);
+} 
+
+span {
+    border: 2px solid $white;
+    padding: 5px;
 }
+span:hover {
+    border-color: rgba(247, 239, 204, 0.945);
+}
+nav {
+    text-transform: uppercase;
+}
+nav#dropdown ul {
+
+    //'&' represents parent (nav#dropdown ul) to prevent retyping
+    & li{
+        z-index: 1000;
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        top: 10px;
+        left: 0px;
+    }
+    & li:nth-child(1):hover {
+        
+        ul {
+            visibility: visible;
+            display: flex;
+            position: relative;
+        }
+    }
+    ul {            
+        visibility: hidden;
+        position: absolute;
+        top: -20px; 
+        right: 0px;
+        padding: 10px;
+        width: 8vw; 
+        
+        li {
+            white-space: nowrap;
+            display: inline; 
+            transition: all 3s;            
+            
+        }
+        a {
+            display: block;
+            padding-right: 20px;
+        }
+    }
+    a{
+        display: inline-block;
+        padding: 10px;
+        text-decoration: none;
+    }
+    
+}
+
+
 
 
 

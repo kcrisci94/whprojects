@@ -6,10 +6,10 @@ main.background {
   width: 60vw;
   font-size: 120%;
   margin: 20px auto;
-  background-color: rgba(247, 124, 75, 0.6);
-  border: 15px solid rgba(8, 110, 25, 0.308);
+  background: linear-gradient(90deg, rgba(78, 122, 64, 0.7), rgba(236, 126, 62, 0.6));
   border-radius: 5px;
   margin-bottom: 0;
+  padding: 20px;
 }
 
 main.background h3 {
@@ -19,18 +19,18 @@ main.background h3 {
 }
 
 main.background p {
-  color: #3a2421;
-  text-shadow: 1px 2px 8px;
+  color: #0a0a0a;
+  text-shadow: 1px 2px 8px #684949;
   padding: 10px;
 }
 
-ul {
-  color: #3a2421;
+ul.page {
+  color: #0a0a0a;
   margin: 0;
-  text-shadow: 1px 2px 8px;
+  text-shadow: 1px 2px 8px #684949;
 }
 
-ul li {
+ul.page li {
   font-size: 90%;
   padding: 10px;
   text-transform: none;
