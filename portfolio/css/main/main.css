@@ -19,51 +19,49 @@ a:hover {
   background-color: rgba(247, 124, 75, 0.199);
 }
 
-span {
-  border: 2px solid rgba(255, 255, 255, 0.534);
-  padding: 5px;
-}
-
-span:hover {
-  border-color: rgba(247, 239, 204, 0.945);
+i {
+  font-size: 2em;
 }
 
 nav {
   text-transform: uppercase;
 }
 
+nav#dropdown > ul > li:hover ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav#dropdown ul {
+  text-align: right;
+  padding: 10px;
+  margin: 0;
+}
+
 nav#dropdown ul li {
   z-index: 1000;
   position: relative;
-  display: flex;
-  justify-content: flex-start;
-  top: 10px;
-  left: 0px;
-}
-
-nav#dropdown ul li:nth-child(1):hover ul {
-  visibility: visible;
-  display: flex;
-  position: relative;
+  display: inline-flex;
+  justify-content: center;
 }
 
 nav#dropdown ul ul {
-  visibility: hidden;
   position: absolute;
-  top: -20px;
-  right: 0px;
+  display: none;
+  justify-content: center;
   padding: 10px;
   width: 8vw;
+  top: 100%;
+  right: 10px;
 }
 
 nav#dropdown ul ul li {
-  white-space: nowrap;
-  display: inline;
-  transition: all 3s;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
 }
 
 nav#dropdown ul ul a {
-  display: block;
   padding-right: 20px;
 }
 

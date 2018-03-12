@@ -21,58 +21,56 @@ a:hover{
    background-color: rgba(247, 124, 75, 0.199);
 } 
 
-span {
-    border: 2px solid $white;
-    padding: 5px;
-}
-span:hover {
-    border-color: rgba(247, 239, 204, 0.945);
+i {
+    font-size: 2em;
 }
 nav {
     text-transform: uppercase;
 }
-nav#dropdown ul {
 
-    //'&' represents parent (nav#dropdown ul) to prevent retyping
-    & li{
-        z-index: 1000;
-        position: relative;
-        display: flex;
-        justify-content: flex-start;
-        top: 10px;
-        left: 0px;
+nav#dropdown {
+    & > ul > li:hover {
+       ul {
+           display: flex;
+           flex-direction: column;
+       }
     }
-    & li:nth-child(1):hover {
-        
-        ul {
-            visibility: visible;
-            display: flex;
+    ul{
+        text-align: right;
+        padding: 10px; 
+        margin: 0;
+
+        //li containing menu button and ul
+        & li{
+            z-index: 1000;
             position: relative;
+            display: inline-flex;
+            justify-content: center;
         }
-    }
-    ul {            
-        visibility: hidden;
-        position: absolute;
-        top: -20px; 
-        right: 0px;
-        padding: 10px;
-        width: 8vw; 
-        
-        li {
-            white-space: nowrap;
-            display: inline; 
-            transition: all 3s;            
+      
+        ul {           
+            position: absolute;
+            display: none;
+            justify-content: center;
+            padding: 10px;
+            width: 8vw; 
+            top: 100%;
+            right: 10px;
             
+            li {
+                position: relative;
+                display: inline-flex;
+                justify-content: center; 
+            }
+            a {
+                padding-right: 20px;
+            }
         }
-        a {
-            display: block;
-            padding-right: 20px;
+        a{
+            display: inline-block;
+            padding: 10px;
+            text-decoration: none;
         }
-    }
-    a{
-        display: inline-block;
-        padding: 10px;
-        text-decoration: none;
     }
     
 }
