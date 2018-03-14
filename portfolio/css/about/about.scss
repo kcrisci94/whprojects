@@ -1,30 +1,67 @@
+
+// set up grid
+.profileDisplay{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "words1 words1 img-area  words2 words2"
+    "hobby-area hobby-area . edu-area edu-area";
+}
+.img-area{
+    grid-area: img-area;
+    justify-content: left;
+}
+.about-area{
+  grid-area: about-area;
+}
+.edu-area{
+    grid-area: edu-area;
+}
+.hobby-area{
+    grid-area: hobby-area;
+}
+.words1 {
+    grid-area: words1;
+}
+.words2 {
+    grid-area: words2;
+}
+
+//configure styles
+
+.words1 {
+    transform: rotate(-35deg);
+}
+.words2 {
+    transform: rotate(35deg);
+}
 h1 {
     text-align: center;
+    margin-bottom: 20px;
 }
-
-main.background {
-    width: 60vw;
-    font-size: 120%;
-    margin: 20px auto;
-    background: linear-gradient(90deg, rgba(78, 122, 64, .7), rgba(236, 126, 62, 0.6));
-    // border: 15px solid rgba(170, 122, 160, 0.164);
-    border-radius: 5px;
-    margin-bottom: 0;
+h2 {
+    font-size: 2em;
+    text-align: center;
+    color: red;
     padding: 20px;
-
-    
-    h3 {
-        padding-top: 20px;
-        margin:0;
-        text-align: center;
-    }
-    p {
-        color: rgb(10, 10, 10);
-        text-shadow: 1px 2px 8px rgb(104, 73, 73);
-        
-        padding: 10px;
-    }
 }
+h3 {
+    padding-top: 20px;
+    margin:0;
+    text-align: center;
+    color: rgba(247, 227, 216, 0.734);
+    font-size: 2em;
+}
+p {
+    color: rgb(10, 10, 10);
+    text-shadow: 1px 2px 8px rgb(104, 73, 73);
+    margin: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    font-size: 1.5em;
+}
+
 ul.page {
     color: rgb(10, 10, 10);
     margin: 0;
@@ -40,6 +77,51 @@ ol {
         font-size: 110%;
     }
 }
-h3{
-    color: rgba(247, 227, 216, 0.734)
+.background {
+    margin: 20px;
+    max-width: 30vw;
+    position: relative;
+    top: 40px;
+    p {
+        padding-top: 15px;
+    }
+    
+}
+.education {
+    // background-color: white;
+    max-width: 40vw;
+    margin: 20px;
+    font-size: 1.5em;
+     ul{
+        color: white;
+     } 
+    
+}
+.hobbies {
+    // background-color: white;
+    max-width: 40vw;
+    margin: 20px;
+    p {
+        color: white;
+    }
+}
+.about {
+    position: relative;
+    top: 40px;
+}
+#about {
+    color: black;
+    text-align: center; 
+    font-size: 3em;
+    position: relative;
+    margin: 0;
+}
+#pic1 {
+    margin: 20px;
+}
+#me {
+    display: block;
+    max-width: 200px;
+    border-radius: 100%;
+    margin: 0 auto;
 }
