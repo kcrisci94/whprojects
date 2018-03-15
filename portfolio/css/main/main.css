@@ -1,6 +1,8 @@
 body {
   color: rgba(247, 239, 204, 0.945);
-  background-image: linear-gradient(232deg, rgba(233, 52, 45, 0.4), #1b2350, rgba(9, 110, 9, 0.47)), url("../../pictures/backgroundImage2.jpg");
+  background-image: linear-gradient(-150deg, rgba(247, 124, 75, 0.87), rgba(14, 13, 13, 0.493)), url("../../pictures/backgroundImage3.png");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   background-attachment: fixed;
   margin: 0;

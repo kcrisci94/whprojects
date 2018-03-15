@@ -20,8 +20,9 @@ header.info h3 {
 }
 
 div.resume {
-  width: 80vw;
+  width: 70vw;
   margin: 0 auto;
+  margin-top: 120px;
   background: linear-gradient(90deg, rgba(78, 122, 64, 0.7), rgba(236, 126, 62, 0.6));
   color: black;
   padding: 20px;
@@ -52,19 +53,19 @@ div.resume {
 }
 
 @media (max-width: 10000px) {
-  body {
+  .resume {
     font-size: 140%;
   }
 }
 
 @media (max-width: 1170px) {
-  body {
+  .resume {
     font-size: 125%;
   }
 }
 
 @media (max-width: 900px) {
-  body {
+  .resume {
     font-size: 100%;
   }
 }
@@ -84,7 +85,7 @@ div.resume {
 }
 
 @media (max-width: 560px) {
-  body {
+  .resume {
     font-size: 85%;
   }
   header.info {

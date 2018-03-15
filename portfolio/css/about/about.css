@@ -29,6 +29,27 @@
   grid-area: words2;
 }
 
+.portfolioDisplay {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.portfolioDisplay div div {
+  height: 20vh;
+  width: 20vw;
+  background-color: grey;
+  margin: 10px;
+  margin-bottom: 80px;
+}
+
+.portfolioDisplay .row1, .portfolioDisplay .row2, .portfolioDisplay .row3 {
+  display: flex;
+  justify-content: space-between;
+}
+
 .words1 {
   transform: rotate(-35deg);
 }
@@ -37,9 +58,77 @@
   transform: rotate(35deg);
 }
 
+.education {
+  max-width: 40vw;
+  margin: 20px;
+  font-size: 1.5em;
+}
+
+.education ul {
+  color: white;
+  margin: 0;
+  text-shadow: 1px 2px 8px #684949;
+}
+
+.education ul li {
+  font-size: 90%;
+  padding: 10px;
+  text-transform: none;
+}
+
+.education ol li {
+  font-size: 110%;
+}
+
+.hobbies {
+  max-width: 40vw;
+  margin: 20px;
+  position: relative;
+  bottom: 80px;
+}
+
+.hobbies p {
+  color: white;
+}
+
+.about {
+  position: relative;
+  top: 40px;
+}
+
+#about {
+  color: black;
+  text-align: center;
+  font-size: 3em;
+  position: relative;
+  margin: 0;
+}
+
+#portfolio {
+  color: black;
+  text-align: center;
+  font-size: 3em;
+  position: relative;
+  margin: 0;
+}
+
+#pic1 {
+  margin: 20px;
+}
+
+#me {
+  display: block;
+  max-width: 200px;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
 h1 {
   text-align: center;
   margin-bottom: 20px;
+  color: rgba(247, 227, 216, 0.734);
+  margin-top: 10px;
+  padding-top: 40px;
 }
 
 h2 {
@@ -67,73 +156,36 @@ p {
   font-size: 1.5em;
 }
 
-ul.page {
-  color: #0a0a0a;
+div.github a {
+  font-size: 1em;
+  text-decoration: underline;
+  color: rgba(0, 0, 255, 0.603);
+}
+
+footer {
+  height: 15vh;
+  width: 100%;
   margin: 0;
-  text-shadow: 1px 2px 8px #684949;
-}
-
-ul.page li {
-  font-size: 90%;
-  padding: 10px;
-  text-transform: none;
-}
-
-ol li {
-  font-size: 110%;
-}
-
-.background {
-  margin: 20px;
-  max-width: 30vw;
-  position: relative;
-  top: 40px;
-}
-
-.background p {
-  padding-top: 15px;
-}
-
-.education {
-  max-width: 40vw;
-  margin: 20px;
-  font-size: 1.5em;
-}
-
-.education ul {
-  color: white;
-}
-
-.hobbies {
-  max-width: 40vw;
-  margin: 20px;
-}
-
-.hobbies p {
-  color: white;
-}
-
-.about {
-  position: relative;
-  top: 40px;
-}
-
-#about {
-  color: black;
+  padding: 0;
   text-align: center;
-  font-size: 3em;
+  background-color: black;
   position: relative;
-  margin: 0;
+  bottom: 0px;
 }
 
-#pic1 {
-  margin: 20px;
+footer div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-#me {
-  display: block;
-  max-width: 200px;
-  border-radius: 100%;
-  margin: 0 auto;
+footer p {
+  color: white;
+  padding: 0;
+}
+
+footer i {
+  position: relative;
+  left: 30px;
 }
 /*# sourceMappingURL=about.css.map */
