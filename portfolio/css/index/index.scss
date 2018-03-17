@@ -105,6 +105,7 @@
 #about {
     position: relative;
     margin: 0;
+    background-image: url("../pictures/stars.jpg");
 }
 #portfolio {
     position: relative;
@@ -113,9 +114,14 @@
 #pic1 {
     margin: 20px;
 }
+.background {
+    background-image: url("../../pictures/stars.jpg");
+}
 #me {
     display: block;
-    max-width: 200px;
+    width: auto;
+    max-width: 15%;
+    height: auto;
     border-radius: 100%;
     margin: 0 auto;
 }
@@ -162,7 +168,7 @@ footer {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: black;
+    background-color: rgb(180, 5, 5);
     position: relative;
     bottom: 0px;
     div {
@@ -200,14 +206,17 @@ i{
     }
 }
 @media (max-width: 700px) {
-    #me {
-        width: 150px;
+    nav {
+        font-size: 90%; 
     }
     body {
         font-size: 80%;
     }
 }
 @media (max-width: 525px) {
+    nav {
+        font-size: 80%;
+    }
     body {
         font-size: 75%;
     }
