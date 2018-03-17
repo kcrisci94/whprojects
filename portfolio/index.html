@@ -7,32 +7,118 @@
     <title>Kaleb's Portfolio</title>
     <link rel="stylesheet" href="css/main/main.css">
     <link rel="stylesheet" href="css/index/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 </head>
 <body>
-    <!-- <nav id="dropdown">
-            <ul>
-                <li class="menu">
-                    <a href="#"><i class="fas fa-bars"></i></a>
-                    <ul id="navigation">
-                        <!-- <li><a href="index.html">Home</a></li> -->
-                        <!-- <li><a href="about.html">About</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="resume.html">Resume</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+    <!-- NAVIGATION -->
+    <nav id="dropdown">
+        <ul id="navigation">
+            <li><a href="/">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+    </nav>
+
+    <!-- TITLE PAGE -->
+    <div class="title">
+        <h1 id="title">Kaleb Crisci</h1>
+        <h3>Web Developer.</h3>
+    </div>
+       
+    <!-- First Header (About Me) -->
+    <header id="about">
+        <h1>About Me</h1>  
+    </header>
+
+<!-- Grid About Me -->
+   <div class="profileDisplay">
+        <img id="me" class="img-area" src="pictures/Me.jpg" alt="me"/>
+        <section class="education edu-area">
+            <h3>Education</h3>
+            <ul class="page">
+                <li>
+                    <b>2012</b>
+                   <ul>
+                       <li>Graduated From Mount Shasta High School</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>2012-2013</b>
+                    <ul>
+                        <li>Studied General Engineering at College of the Siskiyous</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>2016</b>
+                    <ul>
+                        <li>Attended ITT Technical Institute studying NSA (unable to finish because of school closure)</li>
+                    </ul>
+                </li>               
+                <li>
+                    <b>2018</b>
+                    <ul class="lastUl">
+                        <li>Graduated From West Hills College with Associates In Liberal Arts</li>
+                        <li>Interned for Bitwise Industries</li>
+                        <li>Plan on Attending Chico State to get my bachelor's degree</li>
                     </ul>
                 </li>
             </ul>
-        </nav> -->
-         
-        <header class="head">
-            <h1>Kaleb Crisci</h1>
-            <h2>Web Developer.</h2>
-            <ul class="ulHead">
-                <li><a href="#">Sign In</a></li>
-                <li><a href="about.html">Guest</a></li>
-            </ul>
-        </header>
+        </section>
+
+        <section class="hobbies hobby-area">
+            <h3>Hobbies</h3>
+            <p>
+                I was lucky enough to grow up in a beautiful area with lots of opportunity for outdoor activities, and as a result, I 
+                have always enjoyed being outside. Baseball and soccer are my two favorite sports to play. I also enjoy 
+                climbing trees, swimming, biking, and I have even been known to entertain myself by randomly digging deep holes in the ground. HAHA!
+                As far as non-outdoor activities, I enjoy playing chess, working on my computer, and practicing coding. Since the birth of my daughter 
+                two years ago, I now enjoy spending as much free time with her as I can. 
+            </p>
+        </section>
+    </div>
+    <!-- END ABOUT  -->
+
+    <!-- SECOND HEADER (PORTFOLIO) -->
+    <header id="portfolio">
+        <h1>Portfolio</h1>
+    </header>
+
+    <!-- LAYOUT PORTFOLIO Flex -->
+        <section class="portfolioDisplay">
+            <div class="row1">
+                <a href="#"><div></div></a>
+                <a href="#"><div></div></a>
+                <a href="#"><div></div></a>
+            </div>
+            <div class="row2">
+                <a href="#"><div></div></a>
+                <a href="#"><div></div></a>
+                <a href="#"><div></div></a>
+            </div>
+            <div class="row3">
+                <a href="#"><div></div></a>
+                <a href="#"><div></div></a>
+                <a href="#"><div></div></a>
+            </div>
+            <div class="github">
+                <h3>Check out my <a href="https://github.com/kcrisci94" target="_blank">GITHUB</a> account for more!</h3>
+
+            </div>
+        </section>
+        <!-- End Portfolio -->
+
+        <div style="height: 20vh; width: 100vw;"></div>
+        <!-- Begin Contact Section -->
+        <footer id="contact">
+            <h3>Contact Me</h3>
+            <div class="footer">
+                <p id="phone"><strong>Phone:</strong>(530) 925-2120</p>
+               <a href="https://www.facebook.com/kaleb.crisci" target="_blank"><i style="font-size: 130%; color: rgb(88, 138, 212);" class="fab fa-facebook"></i></a>
+                <p id="email"><strong>Email:</strong> kcrisci94@gmail.com</p>
+            </div>
+        </footer>
+
 </body>
 </html>
