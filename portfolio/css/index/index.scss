@@ -1,26 +1,34 @@
+//LAYOUT WITHOUT GRID
 
-// SET UP FIRST GRID
-.profileDisplay{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    ". . img-area  . ."
-    "hobby-area hobby-area . edu-area edu-area";
+.profileDisplay {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
 }
-.img-area{
-    grid-area: img-area;
-    justify-content: left;
-}
-.about-area{
-  grid-area: about-area;
-}
-.edu-area{
-    grid-area: edu-area;
-}
-.hobby-area{
-    grid-area: hobby-area;
-}
-// END GRID
+
+
+// // SET UP FIRST GRID (move image under profileDisplay in index.html)
+// .profileDisplay{
+//     display:grid;
+//     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+//     grid-template-areas: 
+//     ". . img-area  . ."
+//     "hobby-area hobby-area . edu-area edu-area";
+// }
+// .img-area{
+//     grid-area: img-area;
+//     justify-content: left;
+// }
+// .about-area{
+//   grid-area: about-area;
+// }
+// .edu-area{
+//     grid-area: edu-area;
+// }
+// .hobby-area{
+//     grid-area: hobby-area;
+// }
+// // END GRID
 
 
 //SET DISPLAY FOR PORTFOLIO
@@ -171,4 +179,36 @@ i{
     left: 30px;
 }
 
+}
+@media (max-width: 1000px) {
+    body {
+        font-size: 90%;
+    }
+}
+@media (max-width: 905px){
+    .profileDisplay {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .hobbies {
+        top: 20px;
+        max-width: 70vw;
+    }
+    .education {
+        max-width: 70vw;
+    }
+}
+@media (max-width: 700px) {
+    #me {
+        width: 150px;
+    }
+    body {
+        font-size: 80%;
+    }
+}
+@media (max-width: 525px) {
+    body {
+        font-size: 75%;
+    }
 }
