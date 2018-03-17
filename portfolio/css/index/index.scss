@@ -56,7 +56,35 @@
 }
 // END PORTFOLIO DISPLAY
 
-
+//CREATE TRANSITION BOX
+.transition {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(180deg, rgb(17, 13, 15), rgba(233, 99, 45, 0.87), rgb(17, 13, 15));
+    
+    // div {
+    //     padding: 0;
+    //     margin: 0;
+    //     height: 100%;
+    //     transform: skew(-45deg);
+    //     transform-origin: left bottom;
+    // }
+    // .box1 {
+    //     width: 20%;
+    //     background-color: rgb(63, 46, 24);
+    // }
+    // .box2 {
+    //     width: 40%;
+    //     background-color: rgb(70, 37, 37);
+    // }
+    // .box3 {
+    //     width: 40%;
+    //     background-color: rgba(139, 50, 8, 0.966);
+    // }
+}
 //STYLE BY CLASS
 
 .education {
@@ -99,23 +127,25 @@
         margin: 0;
     }
 }
+.background {
+    background-image: url("../../pictures/stars.jpg");
+}
+.backgroundMain {
+    background-image: linear-gradient(-150deg, rgba(233, 99, 45, 0.87), rgba(14, 13, 13, 0.493)), url('../../pictures/backgroundImage3.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
 
 
 // STYLE BY ID
-#about {
-    position: relative;
-    margin: 0;
-    background-image: url("../pictures/stars.jpg");
-}
+
 #portfolio {
     position: relative;
     margin: 0;
 }
 #pic1 {
     margin: 20px;
-}
-.background {
-    background-image: url("../../pictures/stars.jpg");
 }
 #me {
     display: block;
@@ -133,7 +163,7 @@
 h1 {
     text-align: center;
     font-size: 2.6em;
-    margin-top: 10px;
+    margin-top: 0px;
     padding-top: 40px;
 }
 p {
