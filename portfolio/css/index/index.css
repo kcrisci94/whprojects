@@ -66,6 +66,10 @@
   border-radius: 30px;
 }
 
+.hobbies p {
+  text-indent: 30px;
+}
+
 .about {
   position: relative;
   top: 40px;
@@ -94,6 +98,10 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+.background2 {
+  background-color: #080808;
 }
 
 #portfolio {
@@ -208,6 +216,13 @@ footer i {
   }
   body {
     font-size: 75%;
+  }
+  p {
+    font-size: 85%;
+    line-height: 20px;
+  }
+  .education ul {
+    font-size: 85%;
   }
 }
 /*# sourceMappingURL=index.css.map */

@@ -94,6 +94,9 @@
     bottom: 80px;
     background-color: rgba(156, 116, 116, 0.253);
     border-radius: 30px;
+    p {
+        text-indent: 30px;
+    }
 
 }
 .about {
@@ -122,7 +125,9 @@
     background-position: center center;
     background-size: cover;
 }
-
+.background2 {
+    background-color: rgb(8, 8, 8);
+}
 
 // STYLE BY ID
 
@@ -236,5 +241,14 @@ i{
     }
     body {
         font-size: 75%;
+    }
+    p {
+        font-size: 85%;
+        line-height: 20px;
+    }
+    .education {
+        ul {
+            font-size: 85%;
+        }
     }
 }
