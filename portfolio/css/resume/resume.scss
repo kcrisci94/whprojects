@@ -66,6 +66,9 @@ div.resume {
     }
 }
 @media (max-width:690px) {
+    nav {
+        font-size: 90%;
+    }
     header.info {
         display: flex;
         flex-direction: column;
@@ -82,6 +85,9 @@ div.resume {
 @media (max-width:560px) {
     .resume {
         font-size: 85%;
+    }
+    nav {
+        font-size: 80%;
     }
     header.info {
         display: flex;
