@@ -1,0 +1,47 @@
+$nav:rgb(148, 122, 122);
+
+body {
+    margin: 0;
+}
+button {
+    border: 1px solid darken($nav, 10);
+    padding: 10px;
+    border-radius: 4px;
+    font-size: inherit;
+    &:hover{
+        background-color: lighten($nav, 50);
+        cursor: pointer;
+    }
+}
+nav {
+    padding: 10px;
+    background-color: rgb(148, 122, 122);
+    display: flex;
+    justify-content: flex-end;
+
+}
+h1{
+    background-size: cover;
+    padding: 25px;
+}
+
+body {
+    background-color: white;
+    transition: background-color 500ms;
+}
+body.colorize {
+    background-color: red;
+}
+p {
+    margin: 10px;
+}
+.bigger {
+        font-size: 150%;
+}
+.center {
+        text-align: center;
+}
+.color {
+        color: white;
+}
+

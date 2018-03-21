@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+}
+
+button {
+  border: 1px solid #796262;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: inherit;
+}
+
+button:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+nav {
+  padding: 10px;
+  background-color: #947a7a;
+  display: flex;
+  justify-content: flex-end;
+}
+
+h1 {
+  background-size: cover;
+  padding: 25px;
+}
+
+body {
+  background-color: white;
+  transition: background-color 500ms;
+}
+
+body.colorize {
+  background-color: red;
+}
+
+p {
+  margin: 10px;
+}
+
+.bigger {
+  font-size: 150%;
+}
+
+.center {
+  text-align: center;
+}
+
+.color {
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */
