@@ -1,0 +1,38 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+nav {
+    background-color: salmon;
+    ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    li {
+        margin: 5px;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+nav.vertical {
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+    ul {
+        flex-direction: column;
+    }
+}
+
+main.vertical {
+    margin-left: 28%;
+}
+
+.mega {
+    font-size: 200%;
+    color: yellow;
+}

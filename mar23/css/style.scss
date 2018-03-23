@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+a {
+    position: relative;
+    z-index: 999;
+}
+nav {
+    width: 100%;
+    background-color: black;
+    
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        
+       
+    }
+    li {
+        padding: 20px;
+        
+    }
+    a {
+        font-size: 120%;
+        text-decoration: none;
+        color: white;
+    }
+    a:hover{
+        color: yellow;
+    }
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    position: relative;
+    button{
+        border: none;
+        font-size: 1.3em;
+        border-radius: 10px;
+        background-color: rgb(170, 172, 92);
+        color: rgb(17, 27, 5);
+        padding: 10px;
+    }
+}
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+section {
+    padding: 20px;
+    max-width: 80vw;
+    margin: auto;
+    position: relative;
+    h1 {
+        text-align: center;
+        font-size: 2em;
+        color: rgba(14, 14, 134, 0.993);
+    }
+    p {
+        text-indent: 20px;
+        font-size: 1.5em;
+    }
+}
+
+
+.backRed {
+    background-color: rgb(98, 104, 72);
+}
+.nameStyle {
+    font-size: 200%;
+    color: orange;
+}
+.linkColor1 {
+    color: red;
+}
+
+.linkColor2 {
+    color: red;
+}
+
+.vertical {
+    width: 13%;
+    height: 100%;
+    position: fixed;
+    ul{
+        flex-direction: column;
+        justify-content: center;
+
+    }
+}
+main.vertical2 {
+    width: 87%;
+    position: relative;
+    margin-right: 0;
+}
