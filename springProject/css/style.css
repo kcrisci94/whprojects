@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  background-image: url("../img/stars.jpg");
+  background-size: cover;
+  color: white;
+}
+
+img {
+  width: 100%;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+}
+
+p {
+  position: relative;
+  display: none;
+  z-index: 200;
+  width: 100%;
+}
+
+.group1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.group2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.group3 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+#sun {
+  width: 60vw;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#jupiter {
+  width: 25vw;
+  position: relative;
+  top: 130px;
+  left: 20px;
+}
+
+#saturn {
+  width: 45vw;
+  z-index: 100;
+  top: 50px;
+}
+
+#uranus {
+  width: 15vw;
+  z-index: 100;
+  position: relative;
+  top: 190px;
+  left: 80px;
+}
+
+#neptune {
+  width: 13vw;
+  position: relative;
+  top: 60px;
+}
+
+#earth {
+  width: 8vw;
+}
+
+#venus {
+  width: 9vw;
+  position: relative;
+  left: 30px;
+}
+
+#mars {
+  width: 3vw;
+  position: relative;
+  right: 100px;
+  top: 200px;
+}
+
+#mercury {
+  width: 2.5vw;
+  position: relative;
+  left: 20px;
+  bottom: 10px;
+}
+/*# sourceMappingURL=style.css.map */
