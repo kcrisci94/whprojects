@@ -26,6 +26,14 @@ p {
   width: 100%;
 }
 
+.pDisplay p {
+  display: block;
+}
+
+.planets {
+  height: 100%;
+}
+
 .group1 {
   display: flex;
   justify-content: space-between;
@@ -45,7 +53,7 @@ p {
 }
 
 #sun {
-  width: 60vw;
+  max-width: 45vw;
   position: absolute;
   left: 0;
   right: 0;
@@ -53,10 +61,10 @@ p {
 }
 
 #jupiter {
-  width: 25vw;
+  width: 20vw;
   position: relative;
-  top: 130px;
-  left: 20px;
+  top: 100px;
+  left: 60px;
 }
 
 #saturn {
@@ -93,7 +101,7 @@ p {
   width: 3vw;
   position: relative;
   right: 100px;
-  top: 200px;
+  top: 100px;
 }
 
 #mercury {
@@ -101,5 +109,19 @@ p {
   position: relative;
   left: 20px;
   bottom: 10px;
+}
+
+.noDisplay {
+  display: none;
+}
+
+.clicked {
+  width: 45vw !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  margin: 0 auto;
+  position: relative !important;
 }
 /*# sourceMappingURL=style.css.map */

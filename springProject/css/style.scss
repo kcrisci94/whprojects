@@ -21,6 +21,15 @@ p {
     z-index: 200;
     width: 100%;
 }
+.pDisplay {
+    p {
+        display: block;
+    }
+}
+.planets {
+    height: 100%;
+}
+
 //MERCURY VENUS EARTH
 .group1{
     display: flex;
@@ -40,19 +49,20 @@ p {
     justify-content: space-between;
 }
 
+
 //IMAGES IN ORDER OF BIGGEST TO SMALLEST
 #sun {
-    width: 60vw;
+    max-width: 45vw;
     position: absolute;
     left: 0;
     right: 0;
     margin: auto;
 }
 #jupiter {
-    width: 25vw;
+    width: 20vw;
     position: relative;
-    top: 130px;
-    left: 20px;
+    top: 100px;
+    left: 60px;
    
 }
 #saturn {
@@ -87,11 +97,24 @@ p {
     width: 3vw;
     position: relative;
     right: 100px;
-    top: 200px;
+    top: 100px;
 }
 #mercury {
     width: 2.5vw;
     position: relative;
     left: 20px;
     bottom: 10px;
+}
+.noDisplay {
+    display: none;
+}
+.clicked {
+    width: 45vw !important;
+    top: auto !important; 
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    margin:  0 auto;
+    position: relative !important;
+    
 }
