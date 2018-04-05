@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: #2be22b;
+  background-color: black;
+}
+
+header p {
+  text-align: center;
+}
+
+div {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: lightyellow;
+  color: #2be22b;
+  text-shadow: 2px 1px black;
+  z-index: 1000;
+}
+
+button:hover {
+  background-color: yellow;
+  border: 2px solid black;
+}
+
+.hovered {
+  background-color: yellow;
+}
+
+.changedText {
+  font-size: 200%;
+}
+/*# sourceMappingURL=style.css.map */

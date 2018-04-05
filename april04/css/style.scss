@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(43, 226, 43);
+    background-color: black;
+    p {
+        text-align: center;
+    }
+}
+div {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+button {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: lightyellow;
+    color: rgb(43, 226, 43);
+    text-shadow: 2px 1px black;
+    z-index: 1000;
+    &:hover {
+        background-color: yellow;
+        border: 2px solid black;
+    }
+
+}
+
+.hovered {
+   background-color: yellow;
+}
+
+.changedText {
+    font-size: 200%;
+}
