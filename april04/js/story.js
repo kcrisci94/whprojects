@@ -8,46 +8,22 @@
  // USE LOOPS AND ARRAYS
 
  function myStory() {
-    var characters = ["Pikachu", "Charizard", "Bulbasaur"];
-    var charIndex = parseInt(prompt("Please pick a character: " + characters.join(" ") + " (1, 2, or 3)"));
-    charIndex--;
-    var activities = ["walk up a mountain", "find some food", "go for a swim"];
-    var story = "One beautiful afternoon, ";
-    var activityChoice = parseInt(prompt("Please enter an activity"))
-    while(!characters[charIndex]) {
-        charIndex = parseInt(prompt("Please enter a number 1 to 3"));
-        charIndex--;
-    }
-    while(!activities[activityChoice]) {
-        activityChoice = parseInt(prompt("Please enter a number 1 to 3"));
-        activityChoice--;
-    }
-    
-    if(characters[charIndex] == "Pikachu") {
-        story = story.concat(characters[carIndex], "decided to ");
-        if(activities[activityChoice] == "walk up a mountain") {
-            story = story.concat(activities[activityChoice], ". ");
-        }else if(activities[activityChoice] == "find some food") {
-
-        }else {
-
-        }
-    }else if(characters[charIndex] == "Charizard") {
-        if(activities[activityChoice] == "walk up a mountain") {
-
-        }else if(activities[activityChoice] == "find some food") {
-
-        }else {
-
-        }
-    }else if(characters[charIndex] == "Bulbasaur") {
-        if(activities[activityChoice] == "walk up a mountain") {
-
-        }else if(activities[activityChoice] == "find some food") {
-
-        }else {
-
-        }
-    }
+    var charName = prompt("Please type in the name for your character");
+    document.write("<p id='part1'>Hello, my name is " + 
+    charName + ". I'm trying to find my way home. Please help me!</p>");
+    getTravelMethod();
  }
- myStory();
+
+ function getTravelMethod() {
+     var travelMethod = parseInt(prompt("How should I travel? 1: In the trees, 2: On the ground, 3: On an animal"));
+     switch(travelMethod) {
+         case 1: 
+            
+         case 2: 
+         case 3:
+     }
+
+ }
+//  myStory();
+ 
+ 

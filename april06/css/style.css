@@ -1,0 +1,35 @@
+body {
+  background-color: #c0b1b1;
+}
+
+h1 {
+  text-align: center;
+  color: darkgreen;
+}
+
+p {
+  text-align: center;
+  color: #f01d1d;
+  font-size: 20px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  margin: 10px auto;
+  font-size: 20px;
+  background-color: orange;
+}
+
+button:hover {
+  background-color: #e9784b;
+  cursor: pointer;
+}
+
+#userPick {
+  width: 80vw;
+  padding: 10px;
+  font-size: 15px;
+  background-color: #f7c7c7;
+}
+/*# sourceMappingURL=style.css.map */
