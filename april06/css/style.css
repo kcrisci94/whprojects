@@ -16,7 +16,7 @@ p {
 button {
   padding: 10px;
   border: none;
-  margin: 10px auto;
+  margin: 10px;
   font-size: 20px;
   background-color: orange;
 }
@@ -26,8 +26,13 @@ button:hover {
   cursor: pointer;
 }
 
+header {
+  text-align: center;
+  border: 10px dotted yellow;
+}
+
 #userPick {
-  width: 80vw;
+  width: 200px;
   padding: 10px;
   font-size: 15px;
   background-color: #f7c7c7;
