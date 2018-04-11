@@ -1,0 +1,12 @@
+.textBoxes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.textBoxes input {
+  margin: 10px;
+}
+/*# sourceMappingURL=style.css.map */
