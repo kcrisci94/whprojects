@@ -1,7 +1,11 @@
-#squirrel{
+
+section {
     display: none;
-    width: 50vw;
 }
-div {
-    display: none;
+.display {
+    display: block;
+}
+.textBoxes {
+    width: 40vw;
+    text-align: left;
 }
