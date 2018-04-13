@@ -26,17 +26,14 @@ btnName.addEventListener("click", storyPt1);
 btnPt2.addEventListener("click", storyPt2);
 
 function storyPt1() {
-    
     switch (travelMethod) {
         case 0:
-        
-        displayGround();
-        break;
+            displayGround();
+            break;
         case 1: 
-        
-        displayTree();
+            displayTree();
     }
-}
+};
 
 function storyPt2() {
     if(travelMethod == 1) {
@@ -46,7 +43,7 @@ function storyPt2() {
         var snakeChoices = getSnakeChoices();
         displaySnake(snakeChoices);
     }
-}
+};
         
 function storyPt3() {
     if(travelMethod == 0) {
@@ -56,7 +53,8 @@ function storyPt3() {
         var snakeChoices = getSnakeChoices();
         displaySnake(snakeChoices);
     }
-}
+};
+
 function displayGround() {
     if(groundCount != 1) {
         displayGroundDiv.classList.add("display");
@@ -64,81 +62,81 @@ function displayGround() {
     }else {
         displayGroundDiv2.classList.add("display");
     }
-}
+};
 
-function displaySnake(index) {
-    switch(index) {
-        case 0:
-        // squirrel dies
-        document.write("<p> So <span class='squirrelName'></span> decided to try to sneak around the snake. " +
-        "Scaling the bushes, <span class='gender'></span> slowly crawled around the snake. " +
-        "However, while watching the snakes movements, <span class='gender'></span> forgot to watch where <span class='gender'></span> " +
-        "was going and stepped on a twig, which broke with a noisy 'Crack!'. </p>");
-        break;
+// function displaySnake(index) {
+//     switch(index) {
+//         case 0:
+//         // squirrel dies
+//         document.write("<p> So <span class='squirrelName'></span> decided to try to sneak around the snake. " +
+//         "Scaling the bushes, <span class='gender'></span> slowly crawled around the snake. " +
+//         "However, while watching the snakes movements, <span class='gender'></span> forgot to watch where <span class='gender'></span> " +
+//         "was going and stepped on a twig, which broke with a noisy 'Crack!'. </p>");
+//         break;
 
-        case 1: 
-        // squirrel survives
-        document.write("<p> So <span class='squirrelName'></span> decided to jump into the nearest hole " +
-        "that <span class='gender'></span> could find. <span class='gender'></span> waited for about 20 minutes " +
-        "and poked <span class='gender'></span> head out to see if the snake was gone. Hurray! the snake is gone! " +
-        "So <span class='squirrelName'></span> continues home with no more obstacles.</p>");
-        break;
+//         case 1: 
+//         // squirrel survives
+//         document.write("<p> So <span class='squirrelName'></span> decided to jump into the nearest hole " +
+//         "that <span class='gender'></span> could find. <span class='gender'></span> waited for about 20 minutes " +
+//         "and poked <span class='gender'></span> head out to see if the snake was gone. Hurray! the snake is gone! " +
+//         "So <span class='squirrelName'></span> continues home with no more obstacles.</p>");
+//         break;
 
-        case 2:
-        // links to tree section
-        document.write("<p> So <span class='squirrelName'></span> decided to climb a tree to try to escape from the snake." +
-        "It worked! The snake did not follow. However, now there is a new problem... A bird has spotted you! " +
-        "What should <span class='name'></span> do? </p> <select name='bird' id='bird1'> <option value='climbDown'>Hide On the Ground</option> " +
-        "<option value='stayStill'>Stay Still</option> <option value='climbFaster'>Climb Faster to Escape</option></select> " +
-        "<button type='button' id='btnBird1'>Submit</button>");
-        document.getElementById("btnBird1").addEventListener("click", storyPt3());
-    }
-}
+//         case 2:
+//         // links to tree section
+//         document.write("<p> So <span class='squirrelName'></span> decided to climb a tree to try to escape from the snake." +
+//         "It worked! The snake did not follow. However, now there is a new problem... A bird has spotted you! " +
+//         "What should <span class='name'></span> do? </p> <select name='bird' id='bird1'> <option value='climbDown'>Hide On the Ground</option> " +
+//         "<option value='stayStill'>Stay Still</option> <option value='climbFaster'>Climb Faster to Escape</option></select> " +
+//         "<button type='button' id='btnBird1'>Submit</button>");
+//         document.getElementById("btnBird1").addEventListener("click", storyPt3());
+//     }
+// }
 
-function displayBird(index) {
-    switch(index) {
-        case 0: 
-        if(treeCount != 0) {
-            document.write("<p> So <span class='squirrelName'></span> retreats for the ground and runs for about a mile. " + 
-    "Suddenly, <span class='gender'></span> runs into a snake! Oh No! What should <span id='gender'></span> do!?</p> " +
-    "<select name='snake' id='snake'> <option value='sneakAround'>Sneak Around It</option> <option value='wait'>Hide and Wait</option>" +
-    "<option value='climbTree'>Climb up a Tree</option> </select> <button type='button' id='btnSnake'>Submit</button>");
-        }else {
+// function displayBird(index) {
+//     switch(index) {
+//         case 0: 
+//         if(treeCount != 0) {
+//             document.write("<p> So <span class='squirrelName'></span> retreats for the ground and runs for about a mile. " + 
+//     "Suddenly, <span class='gender'></span> runs into a snake! Oh No! What should <span id='gender'></span> do!?</p> " +
+//     "<select name='snake' id='snake'> <option value='sneakAround'>Sneak Around It</option> <option value='wait'>Hide and Wait</option>" +
+//     "<option value='climbTree'>Climb up a Tree</option> </select> <button type='button' id='btnSnake'>Submit</button>");
+//         }else {
 
-        }
-        treeCount++;
+//         }
+//         treeCount++;
 
-        case 1: 
-        document.write("<p>So <span class='squirrelName'></span> decided to stay still and hope that the bird didn't see <span class='gender'></span>. " +
-    "And it worked! The bird flew away. So, <span class='squirrelName'></span> continued to climb along the branches to his home. " +
-    "</p>");
-    break;
-        case 2:
-        document.write("</div><div id='escapeBird1'><p>So <span class='squirrelName'></span> decided to run as fast as <span class='gender'></span> " + 
-        "along the trees to try to escape the bird. Oh no! The bird has spotted <span class='gender'></span> and is gaining fast!</p> " +
-        "</div>");
-    };
+//         case 1: 
+//         document.write("<p>So <span class='squirrelName'></span> decided to stay still and hope that the bird didn't see <span class='gender'></span>. " +
+//     "And it worked! The bird flew away. So, <span class='squirrelName'></span> continued to climb along the branches to his home. " +
+//     "</p>");
+//     break;
+//         case 2:
+//         document.write("</div><div id='escapeBird1'><p>So <span class='squirrelName'></span> decided to run as fast as <span class='gender'></span> " + 
+//         "along the trees to try to escape the bird. Oh no! The bird has spotted <span class='gender'></span> and is gaining fast!</p> " +
+//         "</div>");
+//     };
 
-    }
+//     }
     
     
 
-function displayTree() {
-    if(treeCount != 1) {
-        document.write("<p>So <span class='squirrelName'></span> decided to travel by tree. <span class='gender'>" + 
-        "</span> hops from branch to branch and almost makes it home when <span class='gender'></span> runs into a bird! " +
-        "Oh No! What should I do!?</p> <select name='bird' id='bird2'> <option value='climbDown'>Hide On the Ground</option>" +
-        "<option value='stayStill'>Stay Still</option> <option value='climbFaster'>Climb Faster to Escape</option> " +
-    "</select> <button type='button' id='btnBird2'>Submit</button>");
-        treeCount++;
-        }else {
-            document.write("<p>So <span class='squirrelName'></span> decided to escape to the trees! <span class='gender'>" + 
-            "</span> hops from branch to branch and almost makes it home when <span class='gender'></span> runs into a bird! " +
-            "Oh No! What should I do!?</p> <select name='bird' id='bird2'> <option value='climbDown'>Hide On the Ground</option>" +
-            "<option value='stayStill'>Stay Still</option> <option value='climbFaster'>Climb Faster to Escape</option> " +
-            "</select> <button type='button' id='btnBird2'>Submit</button>");
-        }
-}
+// function displayTree() {
+//     if(treeCount != 1) {
+//         document.write("<p>So <span class='squirrelName'></span> decided to travel by tree. <span class='gender'>" + 
+//         "</span> hops from branch to branch and almost makes it home when <span class='gender'></span> runs into a bird! " +
+//         "Oh No! What should I do!?</p> <select name='bird' id='bird2'> <option value='climbDown'>Hide On the Ground</option>" +
+//         "<option value='stayStill'>Stay Still</option> <option value='climbFaster'>Climb Faster to Escape</option> " +
+//     "</select> <button type='button' id='btnBird2'>Submit</button>");
+//         treeCount++;
+//         }else {
+//             document.write("<p>So <span class='squirrelName'></span> decided to escape to the trees! <span class='gender'>" + 
+//             "</span> hops from branch to branch and almost makes it home when <span class='gender'></span> runs into a bird! " +
+//             "Oh No! What should I do!?</p> <select name='bird' id='bird2'> <option value='climbDown'>Hide On the Ground</option>" +
+//             "<option value='stayStill'>Stay Still</option> <option value='climbFaster'>Climb Faster to Escape</option> " +
+//             "</select> <button type='button' id='btnBird2'>Submit</button>");
+//         }
+// }
 
 
 
@@ -151,7 +149,7 @@ function getTravelChoices() {
         }
     }
     
-}
+};
 
 // RETURN INDEX NUMBER OF USER'S SNAKE CHOICE
 function getSnakeChoices() {
@@ -160,7 +158,7 @@ function getSnakeChoices() {
             return i; 
         }
     }
-}
+};
 
 // RETURN INDEX NUMBER OF USER'S BIRD CHOICE
 function getBirdChoices() {
@@ -169,4 +167,4 @@ function getBirdChoices() {
             return i; 
         }
     }
-}
+};
