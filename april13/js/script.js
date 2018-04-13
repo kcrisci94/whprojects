@@ -1,5 +1,6 @@
 var items = document.querySelector("#items");
 var photos = document.querySelectorAll("li");
+var cartNum = document.querySelector("#cartNum");
 
 var selectedArray = [];
 var itemArray = [
@@ -64,7 +65,7 @@ function displayItems(arr) {
 }
 displayItems(itemArray);
 
-function addListener(arr) {
+function addListener(arr, objArr) {
     for(var i = 0; i < arr.length; i++) {
         arr[i].addEventListener("click", function(evt) {
 
@@ -73,13 +74,19 @@ function addListener(arr) {
             console.log(this.firstElementChild.checked);
 
             
-            selectedArray.push(Array.from(arr).slice(this.dataset.sku , 1));
-            console.log(selectedArray);
-            // console.log( Array.from(arr).slice(this.dataset.sku));
+            // selectedArray.push(Array.from(arr).slice(this.dataset.sku , 1));
+            if(this.firstElementChild.checked)
+            {
+                selectedArray.push((objArr.slice(this.dataset.sku, parseInt(this.dataset.sku) + 1)[0]));
+            }else {
+                selectedArray.splice(selectedArray.indexOf(objArr.slice(this.dataset.sku, parseInt(this.dataset.sku) + 1)[0]));
+            }
+
+           console.log(selectedArray);
         });
     }
     
 }
 
-addListener(items.children);
+addListener(items.children, itemArray);
 
