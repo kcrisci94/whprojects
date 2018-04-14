@@ -9,13 +9,14 @@
  var travelChoices = ["ground", "tree"];
  var snakeChoices = ["sneakAround", "wait", "climbTree"];
  var birdChoices = ["climbDown", "stayStill", "climbFaster"];
+ 
 
  var storyArray = [
      {
         name: "ground",
         story: `<p> So <span class='squirrelName'></span> crawls for about a mile. 
         Suddenly, <span class='gender'></span> runs into a snake! 
-        Oh No! What should <span id='gender'></span> do!?</p> 
+        Oh No! What should <span class='gender'></span> do!?</p> 
         <form class="textBoxes"> 
             <select name='snake' id='part2'> 
                 <option value='sneakAround'>Sneak Around It</option> 
@@ -94,30 +95,30 @@
  
  var travelEntry = document.getElementById("travel"); // Text box for method of travel
  var btnName = document.getElementById("btnName"); // SUBMIT BUTTON FOR NAME
- var displayGroundDiv = document.getElementById("displayGround"); // Div with part 1 text on the ground
- var displayGroundDiv2 = document.getElementById("displayGround2"); // Div with part 2 text on the ground
- var pStory = document.getElementById("story"); // Div element to put variable into HTML
- // Keep track of how many times squirrel has been to ground or in the trees
- // for scenario purposes
- var groundCount = 0;
- var treeCount = 0;
+ var pStory = document.getElementById("story"); // P element to put variable into HTML
  var travelMethod = getTravelChoices();
  var story = "";
+ var squirrelName;
+ var gender;
+
  btnName.addEventListener("click", storyPt1);
  
  function storyPt1() {
+     document.getElementById("intro").style.display = "none";
+     squirrelName = document.getElementById("name").value;
+    gender = document.getElementById("gender").value;
         if(getTravelChoices() == travelChoices[0]) {
-            story += (storyArray[0].story);
+            story = (storyArray[0].story);
             pStory.innerHTML = story;
             var snakeOpt1 = document.getElementById("snakeOpt1"); // SUBMIT BUTTON TO GO INTO PART 2
             snakeOpt1.addEventListener("click", storyPt2);
          }else {
-             story += (storyArray[1].story);
+             story = (storyArray[1].story);
              pStory.innerHTML = story;
              var birdOpt1 = document.getElementById("birdOpt1");
              birdOpt1.addEventListener("click", storyPt2);
          }     
-      
+         nameAndGender();
  };
  
  function storyPt2() {
@@ -126,16 +127,19 @@
          var snake = getSnakeChoices(2);
          switch(snake) {
              case snakeChoices[0]:
-                story += storyArray[2].story;
+                story = storyArray[2].story;
                 pStory.innerHTML = story;
+                nameAndGender();
              break;
              case snakeChoices[1]:
-                story += storyArray[3].story;
+                story = storyArray[3].story;
                 pStory.innerHTML = story;
+                nameAndGender();
              break;
              case snakeChoices[2]:
-                story += storyArray[4].story;
+                story = storyArray[4].story;
                 pStory.innerHTML = story;
+                nameAndGender();
                 var groundClimb = document.getElementById("groundClimb");
                 groundClimb.addEventListener("click", storyPt3);
          }
@@ -144,19 +148,22 @@
         console.log(treechoice);
         switch(treechoice) {
             case birdChoices[0]:
-               story += storyArray[5].story;
+               story = storyArray[5].story;
                pStory.innerHTML = story;
                var treeDown = document.getElementById("treeDown");
                treeDown.addEventListener("click", storyPt3);
             break;
             case birdChoices[1]:
-               story += storyArray[6].story;
+               story = storyArray[6].story;
                pStory.innerHTML = story;
+              
             break;
             case birdChoices[2]:
-               story += storyArray[7].story;
+               story = storyArray[7].story;
                pStory.innerHTML = story;
+              
         }
+        nameAndGender();
     }
  };
          
@@ -165,35 +172,38 @@
          var treechoice = getBirdChoices(3);
         switch(treechoice) {
             case birdChoices[0]:
-            story += storyArray[8].story;
+            story = storyArray[8].story;
             pStory.innerHTML = story;
+            
             break;
             case birdChoices[1]:
-            story += storyArray[6].story;
+            story = storyArray[6].story;
             pStory.innerHTML = story;
+            
             break;
             case birdChoices[2]: 
-            story += storyArray[7].story;
+            story = storyArray[7].story;
             pStory.innerHTML = story;
+        
         }
-
+        nameAndGender();
      }else if( this.id = "treeDown") {
        
         var snakechoice = getSnakeChoices(3);
         switch(snakechoice) {
             case snakeChoices[0]:
-            story += storyArray[2].story;
+            story = storyArray[2].story;
             pStory.innerHTML = story;
             break;
             case snakeChoices[1]:
-            story += storyArray[3].story;
+            story = storyArray[3].story;
             pStory.innerHTML = story;
             break;
             case snakeChoices[2]: 
-            story += storyArray[9].story;
+            story = storyArray[9].story;
             pStory.innerHTML = story;
         }
-       
+        nameAndGender();
      }
          
  };
@@ -227,7 +237,6 @@
  
  // RETURN INDEX NUMBER OF USER'S BIRD CHOICE
  function getBirdChoices(partNo) {
-    console.log(partNo);
      if(partNo == 3) {
         for(var i = 0; i < birdChoices.length; i++) {
             console.log(document.getElementById("part3").value);
@@ -242,7 +251,21 @@
             }
         }
      }
-    
-    
-    
  };
+
+ function nameAndGender(){
+     var names = document.querySelectorAll(".squirrelName");
+     console.log(names);
+     var genders = document.querySelectorAll(".gender");
+     
+     for(var i = 0; i < names.length; i++) {
+        names[i].innerHTML = squirrelName;
+     }
+     for(var j = 0; j < genders.length; j++) {
+         if(gender == "male"){
+            genders[j].innerHTML = "he";
+         }else {
+             genders[j].innerHTML = "she";
+         }
+     }
+ }
