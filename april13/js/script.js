@@ -77,11 +77,11 @@ function addListener(arr, objArr) {
             // selectedArray.push(Array.from(arr).slice(this.dataset.sku , 1));
             if(this.firstElementChild.checked)
             {
-                selectedArray.push((objArr.slice(this.dataset.sku, parseInt(this.dataset.sku) + 1)[0]));
+                selectedArray.push((objArr.slice(this.dataset.sku - 1, parseInt(this.dataset.sku))[0]));
             }else {
-                selectedArray.splice(selectedArray.indexOf(objArr.slice(this.dataset.sku, parseInt(this.dataset.sku) + 1)[0]));
+                selectedArray.splice(selectedArray.indexOf(objArr.slice(this.dataset.sku, parseInt(this.dataset.sku))[0]), 1);
             }
-
+            cartNum.innerHTML = selectedArray.length;
            console.log(selectedArray);
         });
     }

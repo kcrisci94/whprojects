@@ -5,6 +5,11 @@ h1 {
     font-weight: 400;
     margin-right: auto;
 }
+header {
+    p {
+        text-align: center;
+    }
+}
 nav {
     background-color: rgba(206, 206, 104, 0.85);
     display: flex;
@@ -46,6 +51,7 @@ ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 li {
     display: flex;
