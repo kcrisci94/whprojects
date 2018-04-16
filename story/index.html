@@ -8,41 +8,51 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-        <div id="intro">
-    <header>
-        <p id="instructions">
-            In this story, the user must enter the corresponding number for the choice they wish to make. 
-            Each choice will lead to a different scenario. The story is about a squirrel that is trying to 
-            find its way home.  
-        </p>
-        <p>
-            Once upon a time, there was a squirrel. It had spent the day gathering acorns for the winter and had waundered a little too 
-            far from home. The squirrel will face many challenges along the journey which can only be overcome by making the right choices.
-            First, enter a name for the squirrel...
-        </p>
-    </header>
-        <!-- Get all Basic Information and starting Travel Mode -->
-        
-        <form class="textBoxes">
-            <label for="name">Enter a Name: </label>
-            <input name="name" type="text" id="name">
-            <br />
-            <label for="gender">Gender: </label>
-            <select name="gender" id="gender">
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-            </select>
-            <br />
-            <label for="howToTravel">Method of Travel: </label>
-            <select name="howToTravel" id="travel">
-                <option value="ground">By Ground</option>
-                <option value="tree">By Tree</option>
-            </select>
-            <br />
-            <button input type="button" id="btnName">Submit</button>
-        </form>
-    </div>
-        <p id="story"></p>
+    <div id="intro">
+        <header>
+            <p id="instructions">
+                In this story, the user must enter the corresponding number for the choice they wish to make. 
+                Each choice will lead to a different scenario. The story is about a squirrel that is trying to 
+                find its way home.  
+            </p>
+        </header>
+        <main>
+            <p>
+                Once upon a time, there was a squirrel. It had spent the day gathering acorns for the winter and had waundered a little too 
+                far from home. The squirrel will face many challenges along the journey which can only be overcome by making the right choices.
+                First, enter a name for the squirrel...
+            </p>
+        </main>
+            <!-- Get all Basic Information and starting Travel Mode -->
+            
+            <form class="textBoxes">
+                <ul>
+                    <li>
+                        <label for="name">Enter a Name: </label>
+                        <input name="name" type="text" id="name">
+                        <br />
+                    </li>
+                    <li>
+                        <label for="gender">Gender: </label>
+                        <select name="gender" id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        <br />
+                    </li>
+                    <li>
+                        <label for="howToTravel">Method of Travel: </label>
+                        <select name="howToTravel" id="travel">
+                            <option value="ground">By Ground</option>
+                            <option value="tree">By Tree</option>
+                        </select>
+                        <br />
+                    </li>
+                </ul>
+                <button input type="button" id="btnName">Submit</button>
+            </form>
+        </div>
+            <p id="story"></p>
 
 
     <script src="js/script.js"></script>
