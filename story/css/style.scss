@@ -36,6 +36,28 @@ button {
             padding: 20px;
         }
     }
+    div {
+        display: flex;
+        justify-content: center;
+    }
+   
     
 }
+.beginning {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    
+    select, button {
+        width: 15vw;
+        margin: 5px 0px;
+    
+    }
+    
+}
+
+.noDisplay {
+    display: none;
+}
+
  

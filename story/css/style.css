@@ -45,4 +45,24 @@ button {
   flex-direction: column;
   padding: 20px;
 }
+
+.textBoxes div {
+  display: flex;
+  justify-content: center;
+}
+
+.beginning {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.beginning select, .beginning button {
+  width: 15vw;
+  margin: 5px 0px;
+}
+
+.noDisplay {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
