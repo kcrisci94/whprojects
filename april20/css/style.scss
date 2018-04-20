@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(175, 163, 163);
+}
+ul {
+    padding: 0; 
+    margin: 0;
+    list-style: none;
+}
+
+
+// ANGLE BRACKET TARGETS IMMEDIATE CHILD OF BODY
+body > ul {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   & > li{
+       width: 30%;
+       border: 1px solid #dedede;
+       padding: 10px;
+       border-radius: 4px;
+       background-color: white;
+       margin: 20px;
+   }
+   img {
+       width: 100%;
+   }
+   h3 {
+       font-family: sans-serif;
+   }
+}
+div {
+    padding-bottom: 30px;
+}
+
