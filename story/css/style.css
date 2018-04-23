@@ -8,6 +8,7 @@ body {
   height: 100%;
   background-image: linear-gradient(170deg, rgba(21, 183, 247, 0.849), rgba(109, 103, 43, 0.863));
   background-repeat: no-repeat;
+  text-align: center;
 }
 
 header {
@@ -16,7 +17,7 @@ header {
 }
 
 main {
-  width: 60vw;
+  width: 90%;
 }
 
 button {
@@ -52,7 +53,7 @@ button {
 }
 
 .beginning {
-  width: 30vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -60,6 +61,10 @@ button {
 .beginning select, .beginning button {
   width: 15vw;
   margin: 5px 0px;
+}
+
+.beginning button {
+  margin-left: 45%;
 }
 
 .noDisplay {

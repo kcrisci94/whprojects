@@ -21,6 +21,8 @@
  var squirrelName = "";
  var gender;
  var gender2;
+ var winner = "You Win!";
+ var loser = "You were eaten...";
 
 
  btnName.addEventListener("click", getName)
@@ -30,6 +32,8 @@
  
  function storyPt1() {
      document.getElementById("intro").style.display = "none";
+
+        //TRAVEL BY GROUND
         if(getTravelChoices() == travelChoices[0]) {
             story = (storyArray[0].story);
             console.log('final '+finalStory, squirrelName);
@@ -38,6 +42,7 @@
             pStory.innerHTML = story;
             var snakeOpt1 = document.getElementById("snakeOpt1"); // SUBMIT BUTTON TO GO INTO PART 2
             snakeOpt1.addEventListener("click", storyPt2);
+        //TRAVEL BY TREE
          }else {
              story = (storyArray[1].story);
              finalStory += storyArray[1].storyFinal;
@@ -53,26 +58,30 @@
      if(this.id == "snakeOpt1") {
          var snake = getSnakeChoices(2);
          switch(snake) {
+             //SNEAK AROUND
              case snakeChoices[0]:
                 story = storyArray[2].story;
                 finalStory += storyArray[2].storyFinal;
                 pStory.innerHTML = story;
                 nameAndGender();
+                alert(loser);
                 pStory.innerHTML = finalStory;
              break;
+             //WAIT
              case snakeChoices[1]:
                 story = storyArray[3].story;
                 finalStory += storyArray[3].storyFinal;
                 pStory.innerHTML = story;
+                alert(winner);
+                pStory.innerHTML = finalStory;
                 nameAndGender();
              break;
+             //CLIMB TREE
              case snakeChoices[2]:
                 story = storyArray[4].story;
                 finalStory += storyArray[4].storyFinal;
                 pStory.innerHTML = story;
                 nameAndGender();
-                pStory.innerHTML = finalStory;
-
                 var groundClimb = document.getElementById("groundClimb");
                 groundClimb.addEventListener("click", storyPt3);
          }
@@ -81,6 +90,7 @@
         var treechoice = getBirdChoices(2);
         console.log(treechoice);
         switch(treechoice) {
+            //CLIMB DOWN
             case birdChoices[0]:
                story = storyArray[5].story;
                finalStory += storyArray[5].storyFinal;
@@ -88,16 +98,19 @@
                var treeDown = document.getElementById("treeDown");
                treeDown.addEventListener("click", storyPt3);
             break;
+            //STAY STILL
             case birdChoices[1]:
                story = storyArray[6].story;
                finalStory += storyArray[6].storyFinal;
-               pStory.innerHTML = story;
+               alert(winner);
                pStory.innerHTML = finalStory;
 
             break;
+            //CLIMB FASTER
             case birdChoices[2]:
                story = storyArray[7].story;
                finalStory += storyArray[7].storyFinal;
+               alert(loser);
                pStory.innerHTML = finalStory;
               
         }
@@ -111,44 +124,48 @@
      if(this.id == "groundClimb") {
          var treechoice = getBirdChoices(3);
         switch(treechoice) {
+            //CLIMB DOWN
             case birdChoices[0]:
             story = storyArray[8].story;
             finalStory += storyArray[8].storyFinal;
-            pStory.innerHTML = story;
-            
+            alert(loser);
             break;
+            //WAIT
             case birdChoices[1]:
             story = storyArray[6].story;
             finalStory += storyArray[6].storyFinal;
-            pStory.innerHTML = story;
+            alert(winner);            
             break;
+            //CLIMB FASTER
             case birdChoices[2]: 
             story = storyArray[7].story;
             finalStory += storyArray[7].storyFinal;
-
-            pStory.innerHTML = story;
-        
+            alert(loser);        
         }
         pStory.innerHTML = finalStory;
         nameAndGender();
      }else if( this.id = "treeDown") {
        
         var snakechoice = getSnakeChoices(3);
+    
         switch(snakechoice) {
+            //SNEAK AROUND
             case snakeChoices[0]:
             story = storyArray[2].story;
             finalStory += storyArray[2].storyFinal;
-            pStory.innerHTML = story;
+            alert(loser);
             break;
+            // WAIT
             case snakeChoices[1]:
             story = storyArray[3].story;
             finalStory = storyArray[3].storyFinal;
-            pStory.innerHTML = story;
+            alert(winner);
             break;
+            // CLIMB TREE
             case snakeChoices[2]: 
             story = storyArray[9].story;
             finalStory += storyArray[9].storyFinal;
-            pStory.innerHTML = story;
+            alert(loser);
         }
         nameAndGender();
         pStory.innerHTML = finalStory;
@@ -264,16 +281,16 @@
             name: "groundSneak",
             story: `<p> So <span class='squirrelName'></span> decided to try to sneak around the snake. Scaling the bushes, 
             <span class='gender'></span> slowly crawled around the snake. However, while watching the snakes movements, <span class='gender'></span> 
-            forgot to watch where <span class='gender'></span> was going and stepped on a twig, which broke with a noisy 'Crack!'. </p><br /><h1>EATEN</h1>`,
+            forgot to watch where <span class='gender'></span> was going and stepped on a twig, which broke with a noisy 'Crack!'. </p>`,
             storyFinal: `In order to avoid the snake, ${n} tries to sneak around it. 
             However ${g} accidentally steps on a twig and alerted the snake. ${n}
-            was eaten...`
+            was eaten... \n<img>`
          },
          {
              name: "groundWait",
              story: `<p> So <span class='squirrelName'></span> decided to jump into the nearest hole that <span class='gender'></span> 
              could find. <span class='gender'></span> waited for about 20 minutes and poked <span class='gender'></span> head out to see if the 
-             snake was gone. Hurray! the snake is gone! So <span class='squirrelName'></span> continues home with no more obstacles.</p><br /><h1>Winner!</h1>`,
+             snake was gone. Hurray! the snake is gone! So <span class='squirrelName'></span> continues home with no more obstacles.</p>`,
              storyFinal: `In order to avoid an encounter with the snake, ${n} tries to hide and wait it out. 
             ${g} waited about 20 minutes and then continued on ${g} way. Horray! ${n} 
             made it home!`
@@ -329,7 +346,7 @@
              story: `<p>So <span class='squirrelName'></span> decided to escape back into the trees. Oh No! The bird was waiting!</p>
              <br /><h1>EATEN</h1>`,
              storyFinal: `So ${n} decides to escape from the snake by going back into 
-             the trees. However the bird to waiting. ${n} was eaten...`
+             the trees. However the bird was waiting. ${n} was eaten...`
          }
         
     ];
