@@ -1,0 +1,14 @@
+body.dark {
+    background-color: #3a3a3a;
+    color: #eaeaea;
+}
+form {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid green;
+    #btn {
+        width: 80px;
+    }
+    
+}
