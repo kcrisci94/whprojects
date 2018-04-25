@@ -1,0 +1,24 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(-250deg, #176e6a, #368ab1, rgba(83, 24, 24, 0.438));
+}
+
+header {
+  background-color: #aeaeae;
+  padding: 10px;
+}
+
+header input {
+  border: 1px solid #9f9f9f;
+  padding: 5px;
+  font-style: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  border-radius: 4px;
+}
+/*# sourceMappingURL=style.css.map */
