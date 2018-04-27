@@ -1,0 +1,9 @@
+# use this file to list the path names of files that you do not want to push
+# up to github
+
+# ignore files by path name
+css/style.css.map
+style.scss
+
+# adding ignore for a github.json file in any folder
+*/github.json
