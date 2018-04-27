@@ -7,22 +7,35 @@
 .portfolioDisplay {
   max-width: 80%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
   width: 100%;
 }
 
-.portfolioDisplay div div {
-  height: 20vh;
-  width: 20vw;
-  background-color: grey;
-  margin: 10px;
-  margin-bottom: 80px;
+.portfolioDisplay ul {
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.portfolioDisplay .row1, .portfolioDisplay .row2, .portfolioDisplay .row3 {
+.portfolioDisplay ul li {
+  height: 20vh;
+  width: 25vw;
+}
+
+.portfolioDisplay ul li div {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+}
+
+.portfolioDisplay ul li div img {
+  height: 70%;
+}
+
+.portfolioDisplay ul li div h3 {
+  font-size: 80%;
 }
 
 .transition {
