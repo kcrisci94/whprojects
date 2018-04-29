@@ -20,6 +20,7 @@
 .portfolioDisplay ul li {
   height: 20vh;
   width: 25vw;
+  margin: 10px;
 }
 
 .portfolioDisplay ul li div {
