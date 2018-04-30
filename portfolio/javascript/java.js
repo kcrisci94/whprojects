@@ -23,7 +23,7 @@ const portPages = [
     },
     {
         name: "Search Github API",
-        image: "",
+        image: "pictures/searchGithubApi.JPG",
         pageUrl: "https://kcrisci94.github.io/whprojects/april27/index.html"
     }
 ];
