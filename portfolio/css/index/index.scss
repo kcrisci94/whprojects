@@ -45,11 +45,12 @@
         justify-content: space-around;
         flex-flow: row wrap;
         li {
-            height: 200px;
-            width: 200px;
+            height: 270px;
+            width: 270px;
             margin-bottom: 10px;
             border: 2px solid white;
             text-align: center;
+            background-color: rgb(88, 70, 87);
             div {
                 height: 100%;
                 width: 100%;
@@ -252,6 +253,10 @@ i{
 @media (max-width: 700px) {
     body {
         font-size: 80%;
+    }
+    .portfolioDisplay ul li {
+        height: 200px; 
+        width: 200px;
     }
 }
 @media (max-width: 538px) {
