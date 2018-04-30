@@ -8,17 +8,17 @@ const portPages = [
     }, 
     {
         name: "NumberGuessingGame",
-        image: "../pictures/numberGuessingGame.jpg",
+        image: "pictures/numberGuessingGame.jpg",
         pageUrl: "https://kcrisci94.github.io/whprojects/april06/index.html"
     }, 
     {
         name: "PhotosForSaleTemplate",
-        image: "../pictures/photosForSale.jpg",
+        image: "pictures/photosForSale.jpg",
         pageUrl: "https://kcrisci94.github.io/whprojects/april13/index.html"
     },
     {
         name: "RickandMortyPlayingCards",
-        image: "../pictures/rickAndMorty.jpg",
+        image: "pictures/rickAndMorty.jpg",
         pageUrl: "https://kcrisci94.github.io/whprojects/april20/index.html"
     }
 ];
