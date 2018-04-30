@@ -1,9 +1,9 @@
 
-var portItems = document.querySelector(".portfolioDisplay ul");
-var portPages = [
+const portItems = document.querySelector(".portfolioDisplay ul");
+const portPages = [
     {
     name: "59DaysOfCodeTemplate",
-    image: "../pictures/59daysOfCodeLogo.jpg",
+    image: "pictures/59daysOfCodeLogo.jpg",
     pageUrl: "https://kcrisci94.github.io/whprojects/mar05/Template/template.html"
     }, 
     {
