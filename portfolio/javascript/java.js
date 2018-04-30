@@ -3,22 +3,22 @@ var portItems = document.querySelector(".portfolioDisplay ul");
 var portPages = [
     {
     name: "59DaysOfCodeTemplate",
-    image: "../pictures/59daysOfCodeLogo.PNG",
+    image: "../pictures/59daysOfCodeLogo.jpg",
     pageUrl: "https://kcrisci94.github.io/whprojects/mar05/Template/template.html"
     }, 
     {
         name: "NumberGuessingGame",
-        image: "../pictures/numberGuessingGame.PNG",
+        image: "../pictures/numberGuessingGame.jpg",
         pageUrl: "https://kcrisci94.github.io/whprojects/april06/index.html"
     }, 
     {
         name: "PhotosForSaleTemplate",
-        image: "../pictures/photosForSale.PNG",
+        image: "../pictures/photosForSale.jpg",
         pageUrl: "https://kcrisci94.github.io/whprojects/april13/index.html"
     },
     {
         name: "RickandMortyPlayingCards",
-        image: "../pictures/rickAndMorty.PNG",
+        image: "../pictures/rickAndMorty.jpg",
         pageUrl: "https://kcrisci94.github.io/whprojects/april20/index.html"
     }
 ];
