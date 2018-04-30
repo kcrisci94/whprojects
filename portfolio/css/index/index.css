@@ -24,9 +24,13 @@
   height: 270px;
   width: 270px;
   margin-bottom: 10px;
-  border: 2px solid white;
+  border: 2px solid rgba(247, 239, 204, 0.945);
   text-align: center;
   background-color: #584657;
+}
+
+.portfolioDisplay ul li:hover {
+  background-color: rgba(247, 124, 75, 0.199);
 }
 
 .portfolioDisplay ul li div {
@@ -252,7 +256,7 @@ footer i {
     width: 130px;
   }
   .portfolioDisplay ul li div h3 {
-    font-size: 90%;
+    font-size: 85%;
   }
 }
 /*# sourceMappingURL=index.css.map */

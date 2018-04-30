@@ -48,9 +48,12 @@
             height: 270px;
             width: 270px;
             margin-bottom: 10px;
-            border: 2px solid white;
+            border: 2px solid rgba(247, 239, 204, 0.945);
             text-align: center;
             background-color: rgb(88, 70, 87);
+            &:hover {
+                background-color: rgba(247, 124, 75, 0.199);
+            }
             div {
                 height: 100%;
                 width: 100%;
@@ -276,7 +279,7 @@ i{
         height: 130px;
         width: 130px;
         div h3{
-            font-size: 90%;
+            font-size: 85%;
         }
     }
 }

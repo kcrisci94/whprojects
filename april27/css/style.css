@@ -5,7 +5,7 @@ html {
 body {
   margin: 0;
   height: 100%;
-  background: linear-gradient(0deg, #eb4646, #ff9100);
+  background: linear-gradient(-250deg, #176e6a, #368ab1, rgba(83, 24, 24, 0.438));
 }
 
 header {
@@ -16,27 +16,46 @@ header {
 header input {
   border: 1px solid #999;
   padding: 5px;
-  font-family: inherit;
-  font-size: inherit;
+  font-style: inherit;
   font-weight: inherit;
+  font-size: inherit;
+  border-radius: 4px;
+}
+
+#title {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  color: #4751da;
 }
 
 main ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 main li {
   width: 33%;
+  margin: 10px;
+  background-color: #8b8989;
+  text-align: center;
+  padding: 10px;
+  overflow: hidden;
+}
+
+main li h3 {
+  color: #fffb00;
 }
 
 main img {
   width: 100%;
 }
 
-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+.link a {
+  font-size: 60%;
 }
 /*# sourceMappingURL=style.css.map */

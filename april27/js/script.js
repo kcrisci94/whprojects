@@ -33,8 +33,9 @@ function showUsers(users) {
     for(var i = 0; i < users.items.length; i++) {
         var user = `
         <li>
-            <img src="${users.items[i].avatar_url}" alt="${users.items[i].login}"/>
-            <h3>${users.items[i].login}</h3>
+            <img src="${users.items[i].avatar_url}" alt="${users.items[i].login}"/> 
+            <h3>Username: ${users.items[i].login}</h3>
+            <h3 class="link">Account Link: <a href="${users.items[i].html_url}">${users.items[i].url}</a>
         </li>
     `;
         githubUsers.innerHTML += user;

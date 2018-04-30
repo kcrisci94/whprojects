@@ -5,42 +5,42 @@ var cartNum = document.querySelector("#cartNum");
 var selectedArray = [];
 var itemArray = [
     {
-        img: "http://unsplash.it/256/256?image=100",
+        img: "https://unsplash.it/256/256?image=100",
         alt: "Muggy Beach",
         title: "Muggy Beach",
         cost: 100,
         desc: "People playing on a beach during a foggy day."
     },
     {
-        img: "http://unsplash.it/256/256?image=204",
+        img: "https://unsplash.it/256/256?image=204",
         alt: "Railroad Tracks",
         title: "Railroad Tracks",
         cost: 75,
         desc: "Staring down the center of a railroad track."
     },
     {
-        img: "http://unsplash.it/256/256?image=156",
+        img: "https://unsplash.it/256/256?image=156",
         alt: "Footprints",
         title: "Footprints",
         cost: 130,
         desc: "Footprints in the sand"
     },
     {
-        img: "http://unsplash.it/256/256?image=220",
+        img: "https://unsplash.it/256/256?image=220",
         alt: "Train Stop",
         title: "Train Stop",
         cost: 200,
         desc: "Staring at an empty railway stop."
     },
     {
-        img: "http://unsplash.it/256/256?image=110",
+        img: "https://unsplash.it/256/256?image=110",
         alt: "Marshy Sunrise",
         title: "Marshy Sunrise",
         cost: 230,
         desc: "Sunrise over a marshy land."
     },
     {
-        img: "http://unsplash.it/256/256?image=118",
+        img: "https://unsplash.it/256/256?image=118",
         alt: "Mountain Overlook",
         title: "Mountain Overlook",
         cost: 170,
