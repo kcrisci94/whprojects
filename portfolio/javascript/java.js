@@ -23,9 +23,9 @@ var portPages = [
     }
 ];
 
-function displayPortItems() {
-    for(var i = 0; i < portPages.length; i++) {
-        var li = `
+async function displayPortItems() {
+    for(let i = 0; i < portPages.length; i++) {
+        let li = await `
             <li><a href="${portPages[i].pageUrl}"><div><img src="${portPages[i].image}" alt="${portPages[i].name}" /><h3>${portPages[i].name}</h3></div></a></li>
         `;
         portItems.innerHTML += li;
