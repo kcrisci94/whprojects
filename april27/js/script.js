@@ -1,4 +1,4 @@
-getReq(`https://files.mycloud.com/home.php?brand=webfiles&seuuid=f9066e7a8ed2a1cfadf6928a9a896f5b&name=github`, setEnv);
+getReq(`https://files.mycloud.com/home.php?brand=webfiles&seuuid=47bc3fb33e27f04b4cfc0ef7868ba28d&name=github`, setEnv);
 
 var githubUsers = document.querySelector("main ul");
 var githubSearch = '';
