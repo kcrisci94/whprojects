@@ -6,6 +6,8 @@
  // USE IF ELSEIF AND ELSE
  // COMPLEX VERSION:
  // USE LOOPS AND ARRAYS
+
+ var questionSquirrel = 
  var travelChoices = ["ground", "tree"];
  var snakeChoices = ["sneakAround", "wait", "climbTree"];
  var birdChoices = ["climbDown", "stayStill", "climbFaster"];

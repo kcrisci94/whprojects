@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-image: linear-gradient(170deg, rgba(21, 183, 247, 0.849), rgba(109, 103, 43, 0.863));
+  background-image: linear-gradient(180deg, rgba(247, 157, 21, 0.849), #dac135, rgba(247, 82, 6, 0.781));
   background-repeat: no-repeat;
   text-align: center;
 }

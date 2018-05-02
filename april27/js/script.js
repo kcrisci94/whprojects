@@ -1,3 +1,5 @@
+getReq(`https://files.mycloud.com/home.php?brand=webfiles&seuuid=fb4982984436a66f287b8672349eab00&name=ghproject#23a3c71/device_0/ghproject/ghproject/github.json`, setEnv);
+
 var githubUsers = document.querySelector("main ul");
 var githubSearch = '';
 var clientId = '';
@@ -6,12 +8,43 @@ var clientSecret = "";
 var searchBox = document.querySelector("header input");
 searchBox.addEventListener("keyup", getSearchStr);
 
+let envVars;
+
+function allEnvVars() {
+    let url, id, secret;
+    return {
+        set_url: function(data) {
+            url = data;
+        },
+        set_id: function(data) {
+            id = data;
+        },
+        set_secret: function(data) {
+            secret = data;
+        }, 
+        get_url: function() {
+            return url;
+        },
+        get_id: function() {
+            return id;
+        },
+        get_secret: function() {
+            return secret;
+        }
+    }
+}
+function setEnv(obj){
+    envVars = allEnvVars();
+    envVars.set_url(obj.root_url);
+    envVars.set_id(obj.client_id);
+    envVars.set_secret(obj.client_secret);
+    
+}
 
 function getReq(url, func) {
     var req = new XMLHttpRequest();
-    console.log(req);
     req.open("GET", url);
-
+    console.log(url);
     req.onload = function() {
         if(req.readyState === 4 && req.status === 200) {
             func(JSON.parse(req.responseText));
@@ -20,11 +53,6 @@ function getReq(url, func) {
         }
     }
     req.send(null);
-}
-function getKeys(keys) {
-    githubSearch = keys.github_search;
-    clientId = keys.client_id;
-    clientSecret = keys.client_secret;
 }
 
 function showUsers(users) {
@@ -45,10 +73,7 @@ function showUsers(users) {
 
 function getSearchStr() {
     githubUsers.innerHTML = "";
-    var searchStr = "";
-    searchStr = searchBox.value;
-    var githubUrl = `${githubSearch}?q=${searchStr}&per_page=5&client_id=${clientId}&client_secret=${clientSecret}`;
-    getReq(githubUrl, showUsers);
+    var searchStr = searchBox.value;
+    getReq(`${envVars.get_url}?q=${searchStr}&per_page=5&client_id=${envVars.get_id}&client_secret=${envVars.get_secret}`, showUsers);
 }
-getReq("js/github.json", getKeys);
 
