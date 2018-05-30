@@ -20,11 +20,6 @@ const portPages = [
         name: "Rick and Morty Playing Cards",
         image: "pictures/rickAndMorty.jpg",
         pageUrl: "https://kcrisci94.github.io/whprojects/april20/index.html"
-    },
-    {
-        name: "Search Github API",
-        image: "pictures/searchGithubApi.JPG",
-        pageUrl: "https://kcrisci94.github.io/whprojects/april27/index.html"
     }
 ];
 
