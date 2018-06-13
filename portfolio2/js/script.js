@@ -17,7 +17,7 @@ const portPages = [
     }, 
     {
         name: "Sample Survey Form",
-        image: "./pictures/survey.jpg",
+        image: "./pictures/survey.JPG",
         pageUrl: "https://kcrisci94.github.io/whprojects/portfolioItems/survey/index.html"
     },
     {
@@ -27,7 +27,7 @@ const portPages = [
     },
     {
         name: "Technical Document Outline",
-        image: "./pictures/technicalDocument.jpg",
+        image: "./pictures/technicalDocument.JPG",
         pageUrl: "https://kcrisci94.github.io/whprojects/portfolioItems/technicalDocument/index.html"
     }
 ];
