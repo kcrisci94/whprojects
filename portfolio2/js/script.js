@@ -35,7 +35,7 @@ const portPages = [
 function displayPortItems() {
     for(let i = 0; i < portPages.length; i++) {
         let li = `
-            <li><a href="${portPages[i].pageUrl}" target="_blank"><div class="project-tile"><img src="${portPages[i].image}" alt="${portPages[i].name}" /><p>${portPages[i].name}</p></div></a></li>
+            <li><a href="${portPages[i].pageUrl}" target="_blank"/><div class="project-tile"><img src="${portPages[i].image}" alt="${portPages[i].name}" /><p>${portPages[i].name}</p></div></a></li>
         `;
         portItems.innerHTML += li;
     }
