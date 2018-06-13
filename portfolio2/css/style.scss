@@ -1,0 +1,153 @@
+$white: rgba(255, 255, 255, 0.534);
+$red: rgba(247, 124, 75, 0.87);
+$black: rgba(14, 13, 13, 0.493);
+
+/*Global Styles*/
+body, html{
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    font-size: 2.6em;
+    margin-top: 0px;
+    padding-top: 40px;
+    color: rgba(247, 239, 204, 0.945);
+}
+h3 {
+    padding-top: 20px;
+    margin:0;
+    text-align: center;
+    color: rgba(247, 239, 204, 0.945);
+    font-size: 2em;
+}
+
+/*NAVIGATION*/
+#navbar {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        li {
+            padding: 15px 5px;
+            text-transform: uppercase;
+        }
+    }
+    a {
+        color: $white;
+        text-decoration: none;
+        font-size: 120%;
+    }
+    a:hover{
+       font-weight: bold;
+       color: rgba(247, 239, 204, 0.945);
+       background-color: rgba(247, 124, 75, 0.199);
+    } 
+}
+/*WELCOME PAGE*/
+
+#welcome-section{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(-150deg, rgba(233, 99, 45, 0.87), rgba(14, 13, 13, 0.493)), url('../pictures/backgroundImage3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    h1, h3{
+       padding: 10px;
+       margin: 0;
+    }
+}
+/*PROJECTS SECTION*/
+#projects{
+    width: 100vw;
+    background-image: url("../pictures/stars.jpg");
+    padding-bottom: 20px;
+    #portfolioDisplay {
+        max-width: 80%;
+        margin: 0 auto;
+        width: 100%;
+        p{
+            font-size: 1.3em;
+            color: $white;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            flex-flow: row wrap;
+            li {
+                height: 270px;
+                width: 270px;
+                margin-bottom: 10px;
+                border: 2px solid rgba(247, 239, 204, 0.945);
+                text-align: center;
+                background-color: rgb(88, 70, 87);
+                &:hover {
+                    background-color: rgba(247, 124, 75, 0.199);
+                }
+                a{
+                    text-decoration: none;
+                }
+                div {
+                    height: 100%;
+                    width: 100%;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    box-sizing: border-box;
+                    img {
+                        width: 100%;
+                        height: 70%;
+                        margin: 0;
+                        // box-sizing: border-box;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*CONTACT SECTION*/
+#contact {
+    height: 15vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(180, 5, 5);
+    div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        p {
+            color:rgba(255, 255, 255, 0.534);
+            padding: 0;
+        }
+        i{
+            position: relative;
+            left: 30px;
+        }
+    }
+}
+@media (max-width: 700px) {
+    body{
+        font-size: 90%;
+    }
+}
+@media (max-width: 550px) {
+    body{
+        font-size: 80%;
+    }
+}
