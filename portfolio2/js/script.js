@@ -12,7 +12,7 @@ const portPages = [
     },
     {
         name: "Tribute Template",
-        image: "./pictures/tributePage.jpg",
+        image: "./pictures/tributePage.JPG",
         pageUrl: "https://kcrisci94.github.io/whprojects/portfolioItems/tributeTemplate/index.html"
     }, 
     {
