@@ -1,0 +1,54 @@
+h2 {
+    margin: 0;
+  }
+  
+  header {
+    text-align: center;
+    height: 100px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;;
+  }
+  aside {
+    width: 60%;
+    margin: 0 auto;
+  }
+  aside h2{
+    text-align: center;
+    padding-top: 20px;
+  }
+  footer {
+    text-align: center;
+  }
+  footer h2{
+    padding-bottom: 20px;
+  }
+  #title {
+    margin: 0;
+  }
+  #main {
+    width: 95%;
+    background-color: grey;
+    margin: 0 auto;
+    border-radius: 7px;
+  }
+  #img-div {
+    background-color: white;
+    width: inherit;
+    border-radius: 7px;
+    margin: 0 auto;
+  }
+  #image {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  #img-caption{
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 20px;
+  }
+  #tribute-info {
+    padding-bottom: 20px;
+  }

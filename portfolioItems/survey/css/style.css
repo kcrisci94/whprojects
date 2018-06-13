@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(92, 186, 240);
+    font-size: 120%;
+    margin: 0;
+}
+header{
+    text-align: center;
+}
+main {
+    background-color: rgba(195, 209, 223, 0.795);
+    padding: 20px;
+    max-width: 70%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+div{
+    margin: 10px;
+    
+}
+textarea{
+    height: 50px;
+    width: 60%;
+}
+button{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    width: 100px;
+    font-size: 110%;
+    background-color: rgb(92, 186, 240);
+    box-sizing: border-box;
+
+}
+button:hover{
+    cursor: pointer;
+    border: 2px solid rgb(84, 84, 189);
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.label{
+    width: 50%;
+    text-align: right;
+    margin-left: 10%;
+}
+.choices{
+    width: 50%;
+}
+
+#description{
+    text-align: center;
+}
+#basicInfo{
+    text-align: right;
+}
+#basicInfo input{
+    width: 40%;
+    margin: 10px;
+}

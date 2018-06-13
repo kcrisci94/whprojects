@@ -1,0 +1,180 @@
+body{
+    background-color: hsl(0,0%,90%);
+    margin: 0;
+}
+h1{
+   font-family: georgia, serif;
+   font-weight: 100;
+   margin: 0
+}
+ h3{
+   font-size: 150%;
+ }
+
+ button:hover{
+   cursor: pointer;
+   border: 2px solid hsl(40, 90%, 30%); 
+ }
+ header{
+   height: 60px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: hsl(0,0%,80%);
+   position: sticky;
+   top: 0;
+ }
+ #headerRight{
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+ }
+ #header-img{
+   max-height: 60px;
+   width: auto;
+ }
+ nav ul{
+   list-style: none;
+   display: flex;
+ }
+ nav ul li{
+   padding: 10px;
+ }
+ a{
+     color: darkgreen;
+ }
+ /*Intro and Searchbar*/
+ #header2{
+   text-align: center;
+ }
+ #email{
+   width: 40%;
+   padding: 5px;
+ }
+#submit{
+ padding: 10px;
+   margin: 10px;
+   border: none;
+   width: 120px;
+   background-color: hsl(40, 90%, 65%);
+   border-radius: 5px;
+ text-transform: uppercase;
+}
+ button{
+   padding: 5px;
+   margin: 10px;
+   border: none;
+   width: 100px;
+   background-color: hsl(40, 90%, 65%);
+   border-radius: 5px;
+ }
+ /*Features*/
+i {
+ color: green;
+ font-size: 2.5em;
+}
+ .row{
+   display: flex;
+ }
+ .left{
+   align-self: center;
+   padding: 20px;
+ }
+ .right{
+   padding: 10px;
+   font-size: 120%;
+ }
+ /*How it Works*/
+ iframe {
+     max-width: 70%;
+     max-height: 60%;
+     display: block;
+     margin: 50px auto;
+ }
+ 
+ /*Pricing*/
+ #pricing{
+   width: 90%;
+   display: flex;
+   justify-content: center;
+   margin: 0 auto;
+ }
+ .item{
+   height: 310px;
+   width: 20vw;
+   margin: 15px;
+   border-radius: 4px;
+   background-color: hsl(56,20%,90%);
+   border: 2px solid hsl(0,0%,60%);
+   box-sizing: border-box;
+ }
+ .itemName {
+   max-width: inherit;
+   height: 50px;
+   background-color: hsl(0, 0%, 80%);
+   text-align: center;
+ }
+ .itemName h3 {
+   font-size: 1.2em;
+   margin: 0;
+   font-family: sans-serif;
+   text-transform: uppercase;
+   padding: 5px;
+ }
+ .itemInfo{
+   width: inherit;
+   text-align: center;
+ }
+ .itemInfo p{
+   margin: 10px;
+ }
+ .price{
+   font-size: 1.5em;
+   padding: 10px;
+ }
+ .itemInfo button{
+   text-transform: uppercase;
+   padding: 10px;
+   margin-top: 11px;
+   background-color: hsl(40, 90%, 50%);
+ }
+ @media (max-width: 770px){
+     #pricing {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+     .item{
+         width: 35vw;
+     }
+ }
+ @media (max-width: 690px) {
+     body{
+         font-size: 95%;
+     }
+ }
+ @media (max-width: 629px) {
+     
+     header {
+         height: 100px;
+         justify-content: center;
+         align-items: flex-end;
+     }
+     #headerLeft{
+         margin-right: 30px;
+         margin-bottom: 10px;
+     }
+     #headerRight{
+         flex-direction: column;
+         align-items: flex-start;
+         justify-content: center;
+     }
+     #headerRight ul{
+         padding: 0;
+     }
+     #headerRight li{
+         padding: 0px 10px;
+     }
+     
+ }
+ 

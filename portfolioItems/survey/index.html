@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+            <h1 id="title">Survey Form</h1>
+    </header>
+    <main id="main">
+        <p id="description">Let us know how we can improve!</p>
+        <form id="survey-form">
+            <div id="basicInfo">
+                <label for="name" id="name-label">Name: </label>
+                <input id="name" type="text" placeholder="Enter your name" required><br>
+                <label for="email" id="email-label">Email: </label>
+                <input id="email" type="email" placeholder="Enter your Email" required><br>
+                <label for="age" id="number-label">Age: </label>
+                <input id="number" type="number" placeholder="Age" min="18" max="100" required><br>
+            </div>
+            <br>
+            <div class="row">
+                <div class="label">
+                    <label for="dropdown" id="dropdown-label">Which option best describes your current role?<label>
+                </div>
+                <div class="choices">
+                    <select id="dropdown"> 
+                        <option disabled>Select an Option</option>
+                        <option selected>Student</option>
+                        <option>Full Time Job</option>
+                        <option>Full Time Learner</option>
+                        <option>Perfer Not to Say</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="label">
+                    <label for="likliness" id="label-radio">How likely is that you would recommend freeCodeCamp to a friend?</label>
+                </div>
+                <div class="choices">
+                    <input type="radio" name="likliness" value="definitely">Definitely<br>
+                    <input type="radio" name="likliness" value="Maybe">Maybe<br>
+                    <input type="radio" name="likliness" value="unsure">Not Sure
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="label">
+                    <label for="improvements" id="label-checkbox">Things that should be improved in the future (Check all that apply):</label>
+                </div>
+                <div class="choices">
+                    <input type="checkbox" name="improvements" value="frontProjects">Front-end Projects<br>
+                    <input type="checkbox" name="improvements" value="backProjects">Back-end Projects<br>
+                    <input type="checkbox" name="improvements" value="visualization">Data Visualization<br>
+                    <input type="checkbox" name="improvements" value="challenges">Challenges<br>
+                    <input type="checkbox" name="improvements" value="community">Open Source Community<br>
+                    <input type="checkbox" name="improvements" value="help">Gitter help rooms<br>
+                    <input type="checkbox" name="improvements" value="videos">Videos<br>
+                    <input type="checkbox" name="improvements" value="meetups">City Meetups<br>
+                    <input type="checkbox" name="improvements" value="wiki">Wiki<br>
+                    <input type="checkbox" name="improvements" value="forum">Forum<br>
+                    <input type="checkbox" name="improvements" value="courses">Additional Courses<br><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="label">
+                    <label for="text" id="text-label">Any Comments or Suggestions?</label>
+                </div>
+                <div class="choices">
+                    <textarea rows="3" columns="80" id="text" name="comment" placeholder="Enter your comment here..."></textarea>
+                </div>
+            </div>
+            <br>
+            <button id="submit">Submit</button>
+        </form>   
+    </main>
+</body>
+</html>
