@@ -22,7 +22,7 @@ const portPages = [
     },
     {
         name: "Product Landing Page",
-        image: "./pictures/productLanding.jpg",
+        image: "./pictures/productLanding.JPG",
         pageUrl: "https://kcrisci94.github.io/whprojects/portfolioItems/productLandingPage/index.html"
     },
     {
