@@ -1,0 +1,144 @@
+body {
+  background-color: #555757;
+}
+
+h3 {
+  color: #302827;
+}
+
+header.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 2px dotted black;
+}
+
+header.info p {
+  margin-left: 0;
+  font-size: 80%;
+}
+
+header.info h2 {
+  font-size: 1.8em;
+}
+
+header.info h3 {
+  text-align: center;
+}
+
+div.resume {
+  width: 70vw;
+  margin: 0 auto;
+  margin-top: 120px;
+  background-color: rgba(233, 227, 221, 0.76);
+  color: #1a1111;
+  padding: 20px;
+  border: 10px solid #818180;
+  border-bottom: none;
+  border-radius: 10px;
+}
+
+.borders {
+  border-bottom: 2px dotted black;
+  padding: 4px;
+}
+
+.center {
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.center li {
+  list-style-position: outside;
+}
+
+#phone {
+  border-bottom: 1px solid black;
+}
+
+#email {
+  border-bottom: 1px solid black;
+}
+
+@media (max-width: 10000px) {
+  .resume {
+    font-size: 140%;
+  }
+}
+
+@media (max-width: 1170px) {
+  .resume {
+    font-size: 125%;
+  }
+}
+
+@media (max-width: 900px) {
+  .resume {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 690px) {
+  header.info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header.info #phone, header.info #email {
+    position: relative;
+    bottom: 15px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding: 0;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .resume {
+    font-size: 85%;
+  }
+  header.info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header.info #phone, header.info #email {
+    position: relative;
+    bottom: 15px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding: 0;
+    margin: 5px 0;
+  }
+}
+
+@media print {
+  body {
+    background-color: none;
+  }
+  .resume {
+    background-color: none;
+    border: none;
+  }
+}
+/*# sourceMappingURL=resume.css.map */
